@@ -1,0 +1,28 @@
+{
+  "A": {
+    "next_line": 3,
+    "fixed_wait_lines": [
+      3,
+      7
+    ],
+    "review_lines": [
+      5
+    ],
+    "active_timed_lines": [
+      6
+    ]
+  },
+  "B": {
+    "next_line": 3,
+    "fixed_wait_lines": [
+      3,
+      7
+    ],
+    "review_lines": [
+      5
+    ],
+    "active_timed_lines": [
+      6
+    ]
+  }
+}

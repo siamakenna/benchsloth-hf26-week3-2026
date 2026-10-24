@@ -1,0 +1,854 @@
+{
+  "id": "L04",
+  "source": "Wait 5 minutes.\nLabel the rack.\nWait 7 minutes.\nWrite the date.\nThat duration conflicts with the listed timing.\nStore the label.\nDo not treat this note as a new interval.",
+  "labels": {
+    "1": "none",
+    "2": "none",
+    "3": "none",
+    "4": "none",
+    "5": "unclear:0",
+    "6": "none",
+    "7": "none"
+  },
+  "snapshot": {
+    "id": "76893111-2536-439f-aac2-c538bc8bf58a",
+    "version": 0,
+    "source_hash": "e7f9d9dd88f5ff4eacbd3fbac7e01c4bb8a9225e59f67396d70c1c1ba6eec046",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Wait 5 minutes.",
+          "label": "Wait 5 minutes.",
+          "kind": "review",
+          "fixed_minutes": 5.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 5",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Label the rack.",
+          "label": "Label the rack.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 3,
+          "source": "Wait 7 minutes.",
+          "label": "Wait 7 minutes.",
+          "kind": "review",
+          "fixed_minutes": 7.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 5",
+          "evidence": []
+        },
+        {
+          "id": 4,
+          "source": "Write the date.",
+          "label": "Write the date.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 5,
+          "source": "That duration conflicts with the listed timing.",
+          "label": "That duration conflicts with the listed timing.",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "evidence": [
+            {
+              "note_id": 5,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "That duration conflicts with the listed timing.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 5,
+                  "start": 14,
+                  "end": 23,
+                  "quote": "conflicts"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "source": "Store the label.",
+          "label": "Store the label.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 7,
+          "source": "Do not treat this note as a new interval.",
+          "label": "Do not treat this note as a new interval.",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "Source restriction: 5",
+          "evidence": []
+        }
+      ],
+      "links": [
+        {
+          "note_id": 5,
+          "target_id": 0,
+          "relation": "unclear",
+          "source": "That duration conflicts with the listed timing.",
+          "target_source": null,
+          "proposed": "unclear:0",
+          "validation": "unresolved",
+          "support": [
+            {
+              "source_id": 5,
+              "start": 14,
+              "end": 23,
+              "quote": "conflicts"
+            }
+          ],
+          "reason": "Source explicitly leaves target identity unresolved."
+        }
+      ],
+      "rest_windows": 0,
+      "documented_rest_minutes": 0.0,
+      "review_needed": 4,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "inference",
+      "protocol": "Wait 5 minutes.\nLabel the rack.\nWait 7 minutes.\nWrite the date.\nThat duration conflicts with the listed timing.\nStore the label.\nDo not treat this note as a new interval."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.283,
+        "result": {
+          "source_hash": "e7f9d9dd88f5ff4eacbd3fbac7e01c4bb8a9225e59f67396d70c1c1ba6eec046",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 5 minutes.",
+              "start": 0,
+              "end": 15
+            },
+            {
+              "id": 2,
+              "source": "Label the rack.",
+              "start": 16,
+              "end": 31
+            },
+            {
+              "id": 3,
+              "source": "Wait 7 minutes.",
+              "start": 32,
+              "end": 47
+            },
+            {
+              "id": 4,
+              "source": "Write the date.",
+              "start": 48,
+              "end": 63
+            },
+            {
+              "id": 5,
+              "source": "That duration conflicts with the listed timing.",
+              "start": 64,
+              "end": 111
+            },
+            {
+              "id": 6,
+              "source": "Store the label.",
+              "start": 112,
+              "end": 128
+            },
+            {
+              "id": 7,
+              "source": "Do not treat this note as a new interval.",
+              "start": 129,
+              "end": 170
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 2.315,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 5.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 3,
+              "minutes": 7.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 4,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 5,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 6,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 7,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 0.244,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none",
+            "4": "none",
+            "5": "unclear:0",
+            "6": "none",
+            "7": "none"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 0.237,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none",
+            "4": "none",
+            "5": "unclear:0",
+            "6": "none",
+            "7": "none"
+          },
+          "links": [
+            {
+              "note_id": 5,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "That duration conflicts with the listed timing.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 5,
+                  "start": 14,
+                  "end": 23,
+                  "quote": "conflicts"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 1.967,
+        "result": {
+          "restrictions": [
+            {
+              "note_id": 5,
+              "target_ids": [
+                1,
+                3,
+                7
+              ],
+              "reason": "Source timing is unresolved.",
+              "support": [
+                {
+                  "source_id": 5,
+                  "start": 14,
+                  "end": 23,
+                  "quote": "conflicts"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 0.412,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 5 minutes.",
+              "label": "Wait 5 minutes.",
+              "kind": "review",
+              "fixed_minutes": 5.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 5",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Label the rack.",
+              "label": "Label the rack.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 3,
+              "source": "Wait 7 minutes.",
+              "label": "Wait 7 minutes.",
+              "kind": "review",
+              "fixed_minutes": 7.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 5",
+              "evidence": []
+            },
+            {
+              "id": 4,
+              "source": "Write the date.",
+              "label": "Write the date.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 5,
+              "source": "That duration conflicts with the listed timing.",
+              "label": "That duration conflicts with the listed timing.",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "evidence": [
+                {
+                  "note_id": 5,
+                  "target_id": 0,
+                  "relation": "unclear",
+                  "source": "That duration conflicts with the listed timing.",
+                  "target_source": null,
+                  "proposed": "unclear:0",
+                  "validation": "unresolved",
+                  "support": [
+                    {
+                      "source_id": 5,
+                      "start": 14,
+                      "end": 23,
+                      "quote": "conflicts"
+                    }
+                  ],
+                  "reason": "Source explicitly leaves target identity unresolved."
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "source": "Store the label.",
+              "label": "Store the label.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 7,
+              "source": "Do not treat this note as a new interval.",
+              "label": "Do not treat this note as a new interval.",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "Source restriction: 5",
+              "evidence": []
+            }
+          ],
+          "links": [
+            {
+              "note_id": 5,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "That duration conflicts with the listed timing.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 5,
+                  "start": 14,
+                  "end": 23,
+                  "quote": "conflicts"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ],
+          "rest_windows": 0,
+          "documented_rest_minutes": 0.0,
+          "review_needed": 4,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "inference",
+          "protocol": "Wait 5 minutes.\nLabel the rack.\nWait 7 minutes.\nWrite the date.\nThat duration conflicts with the listed timing.\nStore the label.\nDo not treat this note as a new interval."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "elapsed_ms": 0.5,
+        "result": {
+          "items": [
+            {
+              "id": "source-5",
+              "source_ids": [
+                5
+              ],
+              "question": "Review source 5: \u201cThat duration conflicts with the listed timing.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "unclear:0 / unresolved",
+              "passages": [
+                "That duration conflicts with the listed timing."
+              ]
+            },
+            {
+              "id": "source-7",
+              "source_ids": [
+                7
+              ],
+              "question": "Review source 7: \u201cDo not treat this note as a new interval.\u201d",
+              "status": "pending",
+              "priority": 4,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Do not treat this note as a new interval."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 5 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 5 minutes."
+              ]
+            },
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cWait 7 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 7 minutes."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "elapsed_ms": 0.197,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Wait 5 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-5",
+              "source_ids": [
+                5
+              ],
+              "question": "Review source 5: \u201cThat duration conflicts with the listed timing.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "unclear:0 / unresolved",
+              "passages": [
+                "That duration conflicts with the listed timing."
+              ]
+            },
+            {
+              "id": "source-7",
+              "source_ids": [
+                7
+              ],
+              "question": "Review source 7: \u201cDo not treat this note as a new interval.\u201d",
+              "status": "pending",
+              "priority": 4,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Do not treat this note as a new interval."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 5 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 5 minutes."
+              ]
+            },
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cWait 7 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 5",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 7 minutes."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-5",
+          "source_ids": [
+            5
+          ],
+          "question": "Review source 5: \u201cThat duration conflicts with the listed timing.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "unclear:0 / unresolved",
+          "passages": [
+            "That duration conflicts with the listed timing."
+          ]
+        },
+        {
+          "id": "source-7",
+          "source_ids": [
+            7
+          ],
+          "question": "Review source 7: \u201cDo not treat this note as a new interval.\u201d",
+          "status": "pending",
+          "priority": 4,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Do not treat this note as a new interval."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 5 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 5 minutes."
+          ]
+        },
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cWait 7 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 7 minutes."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Wait 5 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-5",
+          "source_ids": [
+            5
+          ],
+          "question": "Review source 5: \u201cThat duration conflicts with the listed timing.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "unclear:0 / unresolved",
+          "passages": [
+            "That duration conflicts with the listed timing."
+          ]
+        },
+        {
+          "id": "source-7",
+          "source_ids": [
+            7
+          ],
+          "question": "Review source 7: \u201cDo not treat this note as a new interval.\u201d",
+          "status": "pending",
+          "priority": 4,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Do not treat this note as a new interval."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 5 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 5 minutes."
+          ]
+        },
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cWait 7 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 5",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 7 minutes."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "calls": [],
+    "coverage": [
+      {
+        "note_id": 5,
+        "target_id": null,
+        "candidates": [
+          1,
+          3
+        ],
+        "section_ids": [],
+        "reason": "Multiple possible antecedents or no earlier wait in this section.",
+        "outcome": "structural-abstention"
+      }
+    ],
+    "model_calls": 0,
+    "wall_seconds": 0.00020246399799361825,
+    "second_pass_calls": 0,
+    "notice": "No retries. Structural abstentions use no model call; all temporal candidates accounted for."
+  },
+  "wall_seconds": 0.006835208012489602
+}

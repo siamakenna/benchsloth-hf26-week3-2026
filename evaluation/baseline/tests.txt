@@ -1,0 +1,13 @@
+test_ambiguous_must_not_start_timer (test_engine.EngineTest.test_ambiguous_must_not_start_timer) ... ok
+test_dropped_or_reordered_rejected (test_engine.EngineTest.test_dropped_or_reordered_rejected) ... ok
+test_duration_exact (test_engine.EngineTest.test_duration_exact) ... ok
+test_hallucinated_line_rejected (test_engine.EngineTest.test_hallucinated_line_rejected) ... ok
+test_interrupted_wait_not_admitted_as_rest (test_engine.EngineTest.test_interrupted_wait_not_admitted_as_rest) ... ok
+test_model_cannot_label_active_mixing_as_rest (test_engine.EngineTest.test_model_cannot_label_active_mixing_as_rest) ... ok
+test_sample_has_3_timed_rest_windows_and_one_review (test_engine.EngineTest.test_sample_has_3_timed_rest_windows_and_one_review) ... ok
+test_time_not_silently_rebranded_rest (test_engine.EngineTest.test_time_not_silently_rebranded_rest) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+OK

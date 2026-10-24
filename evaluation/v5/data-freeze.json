@@ -1,0 +1,7 @@
+{
+  "annotation": "Prospective assistant-authored cases before v5 architecture selection; visible to implementer, no independent labels. 20 varied cases, not a population estimate. Original six-line failures are development only.",
+  "files": {
+    "holdout.json": "3377a9639bff286c15ab423a564cc46c27ef24ab28d99d4d40e11b12293e3c0b",
+    "development.json": "cd07a3dd30db28ba2cd62002bbb118b0a2244a2db458de359f1395058ef243dc"
+  }
+}

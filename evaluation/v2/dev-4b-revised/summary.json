@@ -1,0 +1,55 @@
+{
+  "task": "Exact temporal source-note associations, not v1 line classification",
+  "model": "gemma3:4b",
+  "split": "development",
+  "wall_seconds": 157.3229290249874,
+  "engine": {
+    "attention.py": "35eea0472abd2721f41695fd329149e840348f95efd7ac23d6ac811ea6d19787",
+    "app.py": "49f374b6aa26c57a742bb7ff4506184b91d72fc278c5dda0b3e4be9fbeabedfd",
+    "evaluation/v2/run.py": "f14e92662ee5e0481322be9d5f662499a301e8a0e7a06d5e780d932627684245"
+  },
+  "data_sha256": "c1bc9e4f23030cda8d7be428a8b720298c3a43abfc139517edf845994b3361f6",
+  "metrics": {
+    "rules": {
+      "cases": 8,
+      "source_lines": 19,
+      "valid_plans": 8,
+      "failed_plans": 0,
+      "link_tp": 6,
+      "link_fp": 0,
+      "link_fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "timer_eligible": 3,
+      "correct_timers": 3,
+      "unsupported_timer_eligibility": 0,
+      "missed_gold_waits": 1,
+      "gold_waits": 4,
+      "review_lines": 12,
+      "structurally_valid_links": 6,
+      "accepted_source_lines": 19
+    },
+    "model": {
+      "cases": 8,
+      "source_lines": 19,
+      "valid_plans": 8,
+      "failed_plans": 0,
+      "link_tp": 6,
+      "link_fp": 0,
+      "link_fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "timer_eligible": 3,
+      "correct_timers": 3,
+      "unsupported_timer_eligibility": 0,
+      "missed_gold_waits": 1,
+      "gold_waits": 4,
+      "review_lines": 12,
+      "structurally_valid_links": 6,
+      "accepted_source_lines": 19
+    }
+  },
+  "annotation": "Assistant-authored labels; not independent human validation. Model only adds review; no model-enabled timers."
+}

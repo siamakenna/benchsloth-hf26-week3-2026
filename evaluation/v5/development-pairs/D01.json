@@ -1,0 +1,160 @@
+{
+  "case": {
+    "id": "D01",
+    "text": "Label tubes.\nWait 20 minutes.\nAfter the first wait ends, rinse tubes.\nWait 12 minutes.\nAfter the second wait ends, record the label.\nIncubate overnight.",
+    "links": {
+      "3": "after:2",
+      "5": "after:4"
+    },
+    "timers": [
+      2,
+      4
+    ],
+    "group": "4-6"
+  },
+  "snapshot": {
+    "id": "6051be15-0d0c-4db1-b88e-1fb394e2a52c",
+    "version": 0,
+    "source_hash": "7b07813d9ef0cae7d65607cdb64167d58f3dd0cafea34f3925662daf073b48c0",
+    "phase": "failed",
+    "plan": null,
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 2.682,
+        "result": {
+          "source_hash": "7b07813d9ef0cae7d65607cdb64167d58f3dd0cafea34f3925662daf073b48c0",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Label tubes.",
+              "start": 0,
+              "end": 12
+            },
+            {
+              "id": 2,
+              "source": "Wait 20 minutes.",
+              "start": 13,
+              "end": 29
+            },
+            {
+              "id": 3,
+              "source": "After the first wait ends, rinse tubes.",
+              "start": 30,
+              "end": 69
+            },
+            {
+              "id": 4,
+              "source": "Wait 12 minutes.",
+              "start": 70,
+              "end": 86
+            },
+            {
+              "id": 5,
+              "source": "After the second wait ends, record the label.",
+              "start": 87,
+              "end": 132
+            },
+            {
+              "id": 6,
+              "source": "Incubate overnight.",
+              "start": 133,
+              "end": 152
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "elapsed_ms": 3.834,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 2,
+              "minutes": 20.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 4,
+              "minutes": 12.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 5,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 6,
+              "minutes": null,
+              "eligible": false,
+              "reason": "Variable, repeated or ambiguous duration: review source manually"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "failed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "elapsed_ms": 24.148,
+        "result": {},
+        "error": "Focused local classification failed; no partial plan accepted. <urlopen error [Errno 61] Connection refused>"
+      }
+    ],
+    "reviews": {
+      "items": []
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": null,
+      "next_source": null,
+      "confirmed_source_ids": [],
+      "pending_reviews": [],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw": null
+}

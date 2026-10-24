@@ -1,0 +1,30 @@
+[
+  {
+    "id": "A",
+    "current": 2,
+    "lines": [
+      "Label the example tubes.",
+      "Add the prepared buffer.",
+      "Incubate for 12 minutes.",
+      "Rinse the tubes.",
+      "Wait about 8 minutes.",
+      "Mix continuously for 3 minutes.",
+      "Leave undisturbed for 18 minutes.",
+      "Record the example identifier."
+    ]
+  },
+  {
+    "id": "B",
+    "current": 2,
+    "lines": [
+      "Label the example slides.",
+      "Add the prepared solution.",
+      "Incubate for 16 minutes.",
+      "Rinse the slides.",
+      "Wait about 6 minutes.",
+      "Stir continuously for 4 minutes.",
+      "Leave undisturbed for 14 minutes.",
+      "Record the example identifier."
+    ]
+  }
+]

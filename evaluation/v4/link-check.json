@@ -1,0 +1,112 @@
+{
+  "relative_links_checked": 21,
+  "missing": [],
+  "scope": "Current README and v0.4 docs; no claim that pending public URLs exist.",
+  "links": [
+    {
+      "file": "README.md",
+      "target": "assets/v4/desktop-hero.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "demo/index.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "assets/v4/demo-captioned.webm",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/AGENT_ARCHITECTURE.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/AGENT_EVALUATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/DEV_POST_FINAL_DRAFT.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/README_V2.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/AGENT_EVALUATION.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "evaluation/v4/holdout-4b/summary.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/RESEARCHER_TRIAL_V4.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/RELEASE_CHECKLIST_V4.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/JUDGE_SCORECARD_475.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/PUBLIC_DISCLOSURE_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "LICENSE",
+      "exists": true
+    },
+    {
+      "file": "docs/DEV_POST_FINAL_DRAFT.md",
+      "target": "../assets/v4/desktop-hero.png",
+      "exists": true
+    },
+    {
+      "file": "docs/DEV_POST_FINAL_DRAFT.md",
+      "target": "../assets/v4/agent-workbench.png",
+      "exists": true
+    },
+    {
+      "file": "docs/DEV_POST_FINAL_DRAFT.md",
+      "target": "../assets/v4/breathing-room.png",
+      "exists": true
+    },
+    {
+      "file": "docs/DEV_POST_FINAL_DRAFT.md",
+      "target": "../assets/v4/return-handoff.png",
+      "exists": true
+    },
+    {
+      "file": "docs/DEV_POST_FINAL_DRAFT.md",
+      "target": "../assets/v4/baseline-comparison.png",
+      "exists": true
+    },
+    {
+      "file": "docs/RELEASE_REPORT_V4.md",
+      "target": "../assets/v2/hero.png",
+      "exists": true
+    },
+    {
+      "file": "docs/RELEASE_REPORT_V4.md",
+      "target": "../assets/v4/desktop-hero.png",
+      "exists": true
+    }
+  ]
+}

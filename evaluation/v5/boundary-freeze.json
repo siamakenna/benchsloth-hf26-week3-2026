@@ -1,0 +1,4 @@
+{
+  "sha256": "9c77890ce6a4bcfec60727a3293473d6cbda68ea00d3bc7a3abbae74f2fb2749",
+  "annotation": "Supplemental actual18/21/25-line cases authored after engine selection but before any boundary inference. Engine remains frozen. Main20-case results unchanged; do not call this a preselection holdout."
+}

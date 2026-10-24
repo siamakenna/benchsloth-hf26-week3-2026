@@ -1,0 +1,52 @@
+{
+  "input": "1. Incubate for 5 minutes.\n2. Incubate overnight.\n3. Record the example identifier.",
+  "endpoint": "/api/parse",
+  "status": 200,
+  "result": {
+    "steps": [
+      {
+        "id": 1,
+        "source": "1. Incubate for 5 minutes.",
+        "label": "1. Incubate for 5 minutes.",
+        "kind": "hands_on",
+        "model_kind": "hands_on",
+        "fixed_minutes": 5,
+        "rest_minutes": null,
+        "review_needed": false,
+        "reason": "Exact duration quoted in source"
+      },
+      {
+        "id": 2,
+        "source": "2. Incubate overnight.",
+        "label": "2. Incubate overnight.",
+        "kind": "review",
+        "model_kind": "hands_off",
+        "fixed_minutes": null,
+        "rest_minutes": null,
+        "review_needed": true,
+        "reason": "Wait wording outside conservative timer grammar; review source manually"
+      },
+      {
+        "id": 3,
+        "source": "3. Record the example identifier.",
+        "label": "3. Record the example identifier.",
+        "kind": "note",
+        "model_kind": "note",
+        "fixed_minutes": null,
+        "rest_minutes": null,
+        "review_needed": false,
+        "reason": "No explicit fixed duration in source"
+      }
+    ],
+    "rest_windows": 0,
+    "documented_rest_minutes": 0,
+    "review_needed": 1,
+    "engine": "Local Ollama / gemma3:4b",
+    "mode": "inference",
+    "limitations": "Planning aid only. Verify all source lines and use approved equipment timers.",
+    "wall_seconds": 7.425
+  },
+  "observed_seconds": 7.495,
+  "errors": [],
+  "recording": "Unmodified browser capture. No mocked requests, no acceleration."
+}

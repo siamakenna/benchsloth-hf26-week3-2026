@@ -1,0 +1,19 @@
+{
+  "method": "Three local file navigations in headless Chromium on development machine; uncontrolled host workload with local inference/recording services. No Lighthouse score claimed.",
+  "html_bytes": 54907,
+  "gzip_bytes": 15457,
+  "navigations": [
+    {
+      "dom_content_loaded_ms": 19.799999982118607,
+      "load_ms": 22.799999982118607
+    },
+    {
+      "dom_content_loaded_ms": 17.400000005960464,
+      "load_ms": 20.19999998807907
+    },
+    {
+      "dom_content_loaded_ms": 36.5,
+      "load_ms": 41.599999994039536
+    }
+  ]
+}

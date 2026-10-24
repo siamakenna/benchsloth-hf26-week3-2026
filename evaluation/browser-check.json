@@ -1,0 +1,26 @@
+{
+  "browser": "151.0.7922.34",
+  "checks": [
+    "prepared ten lines",
+    "honest prepared label",
+    "source navigation highlights correct original",
+    "rest view opens",
+    "demo timer expires by elapsed wall time",
+    "escape closes dialog",
+    "timer cancellation",
+    "editing invalidates output",
+    "editing disables stale print",
+    "late response discarded",
+    "missing model has recoverable error",
+    "adverse input remains text",
+    "print retains provenance",
+    "mobile has no horizontal overflow",
+    "reload clears plan and timers",
+    "static replay disables live AI",
+    "static replay visible provenance",
+    "standalone replay needs no server",
+    "no browser script errors"
+  ],
+  "errors": [],
+  "notes": "Mock response tests explicitly labeled; screenshots use hand-prepared example. No live inference asserted here."
+}

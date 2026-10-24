@@ -1,0 +1,38 @@
+{
+  "duration_seconds": 74.24,
+  "frames": [
+    {
+      "second": 10,
+      "ready_state": 4,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "second": 30,
+      "ready_state": 4,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "second": 60,
+      "ready_state": 4,
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "trial_checks": [
+    {
+      "simulated_participant": 1,
+      "first_condition": "Task 1 · Manual source review · Example A",
+      "completed_tasks": 2,
+      "scoring": "known fixture answers score correctly; not a human result"
+    },
+    {
+      "simulated_participant": 2,
+      "first_condition": "Task 1 · Prepared assisted review · Example B",
+      "completed_tasks": 2,
+      "scoring": "known fixture answers score correctly; not a human result"
+    }
+  ],
+  "scope": "Authentic media playback/seek verification; trial interactions are automated fixtures, no human results saved."
+}

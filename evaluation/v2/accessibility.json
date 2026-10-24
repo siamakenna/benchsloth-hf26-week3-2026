@@ -1,0 +1,93 @@
+{
+  "method": "Computed text contrast of selected representative UI elements in Chromium; keyboard/dialog/reduced-motion checks in browser suite. Not a complete WCAG certification.",
+  "contrast": [
+    {
+      "selector": ".hero-copy",
+      "ratio": 5.7,
+      "font_size": "16px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(248, 246, 240)"
+    },
+    {
+      "selector": ".hero-foot",
+      "ratio": 5.7,
+      "font_size": "10px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(248, 246, 240)"
+    },
+    {
+      "selector": ".eyebrow",
+      "ratio": 5.43,
+      "font_size": "11px",
+      "foreground": "rgb(74, 108, 88)",
+      "background": "rgb(248, 246, 240)"
+    },
+    {
+      "selector": ".caption",
+      "ratio": 5.53,
+      "font_size": "10px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(244, 243, 233)"
+    },
+    {
+      "selector": ".how-grid .mono",
+      "ratio": 6.3,
+      "font_size": "11px",
+      "foreground": "rgb(66, 98, 77)",
+      "background": "rgb(248, 246, 240)"
+    },
+    {
+      "selector": ".map-step .step-name",
+      "ratio": 13.12,
+      "font_size": "12px",
+      "foreground": "rgb(23, 53, 46)",
+      "background": "rgb(255, 254, 249)"
+    },
+    {
+      "selector": ".map-step .step-type",
+      "ratio": 6.1,
+      "font_size": "8px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(255, 254, 249)"
+    },
+    {
+      "selector": ".legend",
+      "ratio": 5.81,
+      "font_size": "9px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(248, 249, 241)"
+    },
+    {
+      "selector": ".evidence-note",
+      "ratio": 5.6,
+      "font_size": "11px",
+      "foreground": "rgb(82, 102, 91)",
+      "background": "rgb(243, 245, 236)"
+    },
+    {
+      "selector": ".source-quote",
+      "ratio": 12.04,
+      "font_size": "12px",
+      "foreground": "rgb(23, 53, 46)",
+      "background": "rgb(243, 245, 236)"
+    },
+    {
+      "selector": ".map-step.review .duration",
+      "ratio": 5.61,
+      "font_size": "9px",
+      "foreground": "rgb(128, 83, 22)",
+      "background": "rgb(247, 235, 209)"
+    },
+    {
+      "selector": ".mode-label",
+      "ratio": 10.59,
+      "font_size": "9px",
+      "foreground": "rgb(23, 53, 46)",
+      "background": "rgb(221, 233, 222)"
+    }
+  ],
+  "unlabeled_buttons": 0,
+  "unlabeled_inputs": 0,
+  "document_language": "en",
+  "reduced_motion_animation": "none"
+}

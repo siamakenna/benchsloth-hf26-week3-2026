@@ -1,0 +1,6 @@
+{
+  "evaluation": "deterministic timing parser only",
+  "cases": 32,
+  "correct": 32,
+  "accuracy": 1.0
+}

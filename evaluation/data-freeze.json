@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-24T00:39:56.938748+00:00",
+  "annotation": "Synthetic cases authored by coding assistant; no independent human adjudication; frozen before first model call. Holdout is visible to implementer, not a blind external test.",
+  "files": {
+    "holdout.json": "6c13ec69a50684a50f81e449bbdc9519a6c3ae86112674fef82c7d87edfa2030",
+    "development.json": "eb4ba9026a8b3c40d15f0eafdeb9698ef0cb9955015e4927abb49995af7411ba"
+  }
+}

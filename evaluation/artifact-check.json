@@ -1,0 +1,25 @@
+{
+  "duration_seconds": 78.48,
+  "frames": [
+    {
+      "second": 15,
+      "readyState": 4,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "second": 35,
+      "readyState": 4,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "second": 60,
+      "readyState": 4,
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "trial_smoke_check": "Passed simulated interactions; no human results saved",
+  "video": "Actual browser recording; unmodified real-speed sequence"
+}

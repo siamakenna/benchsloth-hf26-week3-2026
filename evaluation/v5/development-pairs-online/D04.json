@@ -1,0 +1,506 @@
+{
+  "case": {
+    "id": "D04",
+    "text": "Wait 12 minutes.\nWait 7 minutes.\nAfter one of these intervals, record the tag; which is unspecified.",
+    "links": {
+      "3": "unclear:0"
+    },
+    "timers": [],
+    "group": "1-3"
+  },
+  "snapshot": {
+    "id": "f28c6e1e-a160-4ec2-9831-88ae4ba6349f",
+    "version": 0,
+    "source_hash": "38b1b75ece23fcd23e3ad0a4bc5000961c40529857b4e3eb9161dacde9723ee9",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Wait 12 minutes.",
+          "label": "Wait 12 minutes.",
+          "kind": "review",
+          "fixed_minutes": 12.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 3",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Wait 7 minutes.",
+          "label": "Wait 7 minutes.",
+          "kind": "review",
+          "fixed_minutes": 7.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 3",
+          "evidence": []
+        },
+        {
+          "id": 3,
+          "source": "After one of these intervals, record the tag; which is unspecified.",
+          "label": "After one of these intervals, record the tag; which is",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        }
+      ],
+      "links": [],
+      "rest_windows": 0,
+      "documented_rest_minutes": 0.0,
+      "review_needed": 3,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "inference",
+      "protocol": "Wait 12 minutes.\nWait 7 minutes.\nAfter one of these intervals, record the tag; which is unspecified."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.098,
+        "result": {
+          "source_hash": "38b1b75ece23fcd23e3ad0a4bc5000961c40529857b4e3eb9161dacde9723ee9",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 12 minutes.",
+              "start": 0,
+              "end": 16
+            },
+            {
+              "id": 2,
+              "source": "Wait 7 minutes.",
+              "start": 17,
+              "end": 32
+            },
+            {
+              "id": 3,
+              "source": "After one of these intervals, record the tag; which is unspecified.",
+              "start": 33,
+              "end": 100
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.196,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 12.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": 7.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.09,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none"
+          },
+          "model": "gemma3:4b"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.047,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none"
+          },
+          "links": []
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.618,
+        "result": {
+          "restrictions": [
+            {
+              "note_id": 3,
+              "target_ids": [
+                1,
+                2
+              ],
+              "reason": "Source timing is unresolved.",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 55,
+                  "end": 66,
+                  "quote": "unspecified"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.126,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 12 minutes.",
+              "label": "Wait 12 minutes.",
+              "kind": "review",
+              "fixed_minutes": 12.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 3",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Wait 7 minutes.",
+              "label": "Wait 7 minutes.",
+              "kind": "review",
+              "fixed_minutes": 7.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 3",
+              "evidence": []
+            },
+            {
+              "id": 3,
+              "source": "After one of these intervals, record the tag; which is unspecified.",
+              "label": "After one of these intervals, record the tag; which is",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            }
+          ],
+          "links": [],
+          "rest_windows": 0,
+          "documented_rest_minutes": 0.0,
+          "review_needed": 3,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "inference",
+          "protocol": "Wait 12 minutes.\nWait 7 minutes.\nAfter one of these intervals, record the tag; which is unspecified."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.496,
+        "result": {
+          "items": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cAfter one of these intervals, record the tag; which is unspecified.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "After one of these intervals, record the tag; which is unspecified."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 12 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 12 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 7 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 7 minutes."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.129,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Wait 12 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cAfter one of these intervals, record the tag; which is unspecified.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "After one of these intervals, record the tag; which is unspecified."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 12 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 12 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 7 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 7 minutes."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cAfter one of these intervals, record the tag; which is unspecified.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "After one of these intervals, record the tag; which is unspecified."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 12 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 12 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 7 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 7 minutes."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Wait 12 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cAfter one of these intervals, record the tag; which is unspecified.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "After one of these intervals, record the tag; which is unspecified."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 12 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 12 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 7 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 7 minutes."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw": {
+    "calls": [],
+    "coverage": [],
+    "model_calls": 0,
+    "wall_seconds": 5.6774995755404234e-05,
+    "second_pass_calls": 0,
+    "notice": "No retries. Structural abstentions use no model call; all temporal candidates accounted for."
+  }
+}

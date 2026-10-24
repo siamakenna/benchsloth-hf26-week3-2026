@@ -1,0 +1,657 @@
+{
+  "id": "M03",
+  "source": "Wait 8 minutes.\nWait 8 minutes.\nAfter one of these waits, rinse the slides; which is unspecified.\nRecord the date.",
+  "labels": {
+    "1": "none",
+    "2": "none",
+    "3": "unclear:0",
+    "4": "none"
+  },
+  "snapshot": {
+    "id": "d18431c2-82aa-4372-94ac-6140e99f2c80",
+    "version": 0,
+    "source_hash": "c0907a1bd202cb2dfe2ea856befe53765f97e24392878e879d694d3f9a6aa801",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Wait 8 minutes.",
+          "label": "Wait 8 minutes.",
+          "kind": "review",
+          "fixed_minutes": 8.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 3",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Wait 8 minutes.",
+          "label": "Wait 8 minutes.",
+          "kind": "review",
+          "fixed_minutes": 8.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 3",
+          "evidence": []
+        },
+        {
+          "id": 3,
+          "source": "After one of these waits, rinse the slides; which is unspecified.",
+          "label": "After one of these waits, rinse the slides; which is",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "evidence": [
+            {
+              "note_id": 3,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "After one of these waits, rinse the slides; which is unspecified.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 53,
+                  "end": 64,
+                  "quote": "unspecified"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "source": "Record the date.",
+          "label": "Record the date.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        }
+      ],
+      "links": [
+        {
+          "note_id": 3,
+          "target_id": 0,
+          "relation": "unclear",
+          "source": "After one of these waits, rinse the slides; which is unspecified.",
+          "target_source": null,
+          "proposed": "unclear:0",
+          "validation": "unresolved",
+          "support": [
+            {
+              "source_id": 3,
+              "start": 53,
+              "end": 64,
+              "quote": "unspecified"
+            }
+          ],
+          "reason": "Source explicitly leaves target identity unresolved."
+        }
+      ],
+      "rest_windows": 0,
+      "documented_rest_minutes": 0.0,
+      "review_needed": 3,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "inference",
+      "protocol": "Wait 8 minutes.\nWait 8 minutes.\nAfter one of these waits, rinse the slides; which is unspecified.\nRecord the date."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.1,
+        "result": {
+          "source_hash": "c0907a1bd202cb2dfe2ea856befe53765f97e24392878e879d694d3f9a6aa801",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 8 minutes.",
+              "start": 0,
+              "end": 15
+            },
+            {
+              "id": 2,
+              "source": "Wait 8 minutes.",
+              "start": 16,
+              "end": 31
+            },
+            {
+              "id": 3,
+              "source": "After one of these waits, rinse the slides; which is unspecified.",
+              "start": 32,
+              "end": 97
+            },
+            {
+              "id": 4,
+              "source": "Record the date.",
+              "start": 98,
+              "end": 114
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.174,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 8.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": 8.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 4,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.099,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "unclear:0",
+            "4": "none"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.209,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "unclear:0",
+            "4": "none"
+          },
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "After one of these waits, rinse the slides; which is unspecified.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 53,
+                  "end": 64,
+                  "quote": "unspecified"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.629,
+        "result": {
+          "restrictions": [
+            {
+              "note_id": 3,
+              "target_ids": [
+                1,
+                2
+              ],
+              "reason": "Source timing is unresolved.",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 53,
+                  "end": 64,
+                  "quote": "unspecified"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.242,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 8 minutes.",
+              "label": "Wait 8 minutes.",
+              "kind": "review",
+              "fixed_minutes": 8.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 3",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Wait 8 minutes.",
+              "label": "Wait 8 minutes.",
+              "kind": "review",
+              "fixed_minutes": 8.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 3",
+              "evidence": []
+            },
+            {
+              "id": 3,
+              "source": "After one of these waits, rinse the slides; which is unspecified.",
+              "label": "After one of these waits, rinse the slides; which is",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "evidence": [
+                {
+                  "note_id": 3,
+                  "target_id": 0,
+                  "relation": "unclear",
+                  "source": "After one of these waits, rinse the slides; which is unspecified.",
+                  "target_source": null,
+                  "proposed": "unclear:0",
+                  "validation": "unresolved",
+                  "support": [
+                    {
+                      "source_id": 3,
+                      "start": 53,
+                      "end": 64,
+                      "quote": "unspecified"
+                    }
+                  ],
+                  "reason": "Source explicitly leaves target identity unresolved."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "source": "Record the date.",
+              "label": "Record the date.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            }
+          ],
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 0,
+              "relation": "unclear",
+              "source": "After one of these waits, rinse the slides; which is unspecified.",
+              "target_source": null,
+              "proposed": "unclear:0",
+              "validation": "unresolved",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 53,
+                  "end": 64,
+                  "quote": "unspecified"
+                }
+              ],
+              "reason": "Source explicitly leaves target identity unresolved."
+            }
+          ],
+          "rest_windows": 0,
+          "documented_rest_minutes": 0.0,
+          "review_needed": 3,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "inference",
+          "protocol": "Wait 8 minutes.\nWait 8 minutes.\nAfter one of these waits, rinse the slides; which is unspecified.\nRecord the date."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.108,
+        "result": {
+          "items": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cAfter one of these waits, rinse the slides; which is unspecified.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "unclear:0 / unresolved",
+              "passages": [
+                "After one of these waits, rinse the slides; which is unspecified."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 8 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 8 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 8 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 8 minutes."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "elapsed_ms": 0.055,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Wait 8 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cAfter one of these waits, rinse the slides; which is unspecified.\u201d",
+              "status": "pending",
+              "priority": 2,
+              "reason": "Proposed association requires human review; it does not change source-supported timing.",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "unclear:0 / unresolved",
+              "passages": [
+                "After one of these waits, rinse the slides; which is unspecified."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cWait 8 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 8 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 8 minutes.\u201d",
+              "status": "pending",
+              "priority": 5,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 8 minutes."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cAfter one of these waits, rinse the slides; which is unspecified.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "unclear:0 / unresolved",
+          "passages": [
+            "After one of these waits, rinse the slides; which is unspecified."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 8 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 8 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 8 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 8 minutes."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Wait 8 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cAfter one of these waits, rinse the slides; which is unspecified.\u201d",
+          "status": "pending",
+          "priority": 2,
+          "reason": "Proposed association requires human review; it does not change source-supported timing.",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "unclear:0 / unresolved",
+          "passages": [
+            "After one of these waits, rinse the slides; which is unspecified."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cWait 8 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 8 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 8 minutes.\u201d",
+          "status": "pending",
+          "priority": 5,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 8 minutes."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "calls": [],
+    "coverage": [
+      {
+        "note_id": 3,
+        "target_id": null,
+        "candidates": [
+          1,
+          2
+        ],
+        "section_ids": [],
+        "reason": "Source explicitly leaves target unresolved.",
+        "outcome": "structural-abstention"
+      }
+    ],
+    "model_calls": 0,
+    "wall_seconds": 7.577502401545644e-05,
+    "second_pass_calls": 0,
+    "notice": "No retries. Structural abstentions use no model call; all temporal candidates accounted for."
+  },
+  "wall_seconds": 0.0020498149970080703
+}

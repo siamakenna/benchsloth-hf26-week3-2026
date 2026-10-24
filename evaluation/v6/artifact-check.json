@@ -1,0 +1,84 @@
+{
+  "passed": 16,
+  "checks": [
+    "review question readable width after layout correction",
+    "sampled contrast 17352e/f8f6f0 >= 4.5",
+    "sampled contrast 52665b/f8f6f0 >= 4.5",
+    "sampled contrast 17352e/dde9de >= 4.5",
+    "sampled contrast f8f6f0/17352e >= 4.5",
+    "sampled contrast 684716/f7ebd1 >= 4.5",
+    "sampled contrast 45634f/eef2e8 >= 4.5",
+    "sampled contrast 658674/f8f6f0 >= 3",
+    "local article images render",
+    "article precision edit visible",
+    "six blinded QA questions",
+    "blinded QA omits references and model outputs",
+    "blinded response export",
+    "rotated structured-source condition",
+    "trial iframe uses actual selected product B",
+    "actual-product trial export without upload"
+  ],
+  "contrast": [
+    {
+      "foreground": "17352e",
+      "background": "f8f6f0",
+      "ratio": 12.25888302656573,
+      "min": 4.5
+    },
+    {
+      "foreground": "52665b",
+      "background": "f8f6f0",
+      "ratio": 5.697851692891886,
+      "min": 4.5
+    },
+    {
+      "foreground": "17352e",
+      "background": "dde9de",
+      "ratio": 10.588937196658039,
+      "min": 4.5
+    },
+    {
+      "foreground": "f8f6f0",
+      "background": "17352e",
+      "ratio": 12.25888302656573,
+      "min": 4.5
+    },
+    {
+      "foreground": "684716",
+      "background": "f7ebd1",
+      "ratio": 7.099304535102645,
+      "min": 4.5
+    },
+    {
+      "foreground": "45634f",
+      "background": "eef2e8",
+      "ratio": 5.872229795162033,
+      "min": 4.5
+    },
+    {
+      "foreground": "658674",
+      "background": "f8f6f0",
+      "ratio": 3.7257389968707346,
+      "min": 3
+    }
+  ],
+  "article_images": [
+    {
+      "src": "../assets/v6/desktop-hero.png",
+      "loaded": true
+    },
+    {
+      "src": "../assets/v6/ask-benchsloth.png",
+      "loaded": true
+    },
+    {
+      "src": "../assets/v6/breathing-room.png",
+      "loaded": true
+    },
+    {
+      "src": "../assets/v6/architecture.png",
+      "loaded": true
+    }
+  ],
+  "scope": "Sampled contrast and actual rendered artifact/blank-form checks. Trial answers are transport fixtures only; download discarded, human n=0. Not full WCAG or participant validation."
+}

@@ -1,0 +1,66 @@
+{
+  "split": "development",
+  "engine": {
+    "attention_agent.py": "f543fc8a6f1966223b94ce5ce44f69ccff2148f5dcaaa94f30abeac55137f1ce",
+    "attention.py": "d5852660d1eeb92a27bc24ba4327e38e5113fd8f45ad26a7d31135e005520be2",
+    "app.py": "49f374b6aa26c57a742bb7ff4506184b91d72fc278c5dda0b3e4be9fbeabedfd",
+    "evaluation/v4/run.py": "14678d91fbc0aed33e8833bc5109a3954632e84af0522a56d31e304acad1db0a"
+  },
+  "wall_seconds": 79.06468911099364,
+  "metrics": {
+    "rules": {
+      "cases": 6,
+      "lines": 12,
+      "valid_plans": 6,
+      "link_tp": 3,
+      "link_fp": 0,
+      "link_fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_waits": 4,
+      "offered": 4,
+      "correct_waits": 4,
+      "unsupported_eligibility": 0,
+      "missed_waits": 0
+    },
+    "v2": {
+      "cases": 6,
+      "lines": 12,
+      "valid_plans": 6,
+      "link_tp": 2,
+      "link_fp": 1,
+      "link_fn": 1,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "gold_waits": 4,
+      "offered": 3,
+      "correct_waits": 3,
+      "unsupported_eligibility": 0,
+      "missed_waits": 1
+    },
+    "agent": {
+      "cases": 6,
+      "lines": 12,
+      "valid_plans": 6,
+      "link_tp": 3,
+      "link_fp": 0,
+      "link_fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_waits": 4,
+      "offered": 4,
+      "correct_waits": 4,
+      "unsupported_eligibility": 0,
+      "missed_waits": 0
+    }
+  },
+  "handoffs": {
+    "n": 4,
+    "correct": 4
+  },
+  "failures": 0,
+  "annotation": "Assistant-authored synthetic labels, not independent human gold. Handoff tests use a simulated clock. No human time saved or manual-source-review speed measured."
+}

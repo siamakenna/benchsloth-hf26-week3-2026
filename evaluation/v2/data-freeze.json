@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-24T01:07:14.089408+00:00",
+  "annotation": "Coding-assistant annotations authored separately from evaluated Gemma, visible to implementer, not independently human adjudicated. V1 holdout exposed, permanently historical. V2 tests a different task: source-linked temporal attention notes; patterns overlap and external validity is limited.",
+  "files": {
+    "development.json": "c1bc9e4f23030cda8d7be428a8b720298c3a43abfc139517edf845994b3361f6",
+    "holdout.json": "317071275aab07bd0f73620f0f76cd5a48bd60cdcd8d99e1c4a645ea9e169125"
+  },
+  "pre_inference_correction": "N07 and N08: unaffected second/first wait is independently eligible in gold, though conservative policy may block both. Corrected before any held-out v2 model call; original labels remain in commit 0210301."
+}

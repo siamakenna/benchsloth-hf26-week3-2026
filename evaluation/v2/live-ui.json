@@ -1,0 +1,111 @@
+{
+  "input": "1. Wait for 5 minutes.\n2. After that wait, record the label.\n3. Incubate overnight.",
+  "events": [
+    {
+      "type": "stage",
+      "elapsed": 0,
+      "stage": "Preparing source lines"
+    },
+    {
+      "type": "stage",
+      "elapsed": 0.001,
+      "stage": "Checking local model readiness"
+    },
+    {
+      "type": "stage",
+      "elapsed": 0.02,
+      "stage": "Analyzing source language"
+    },
+    {
+      "type": "stage",
+      "elapsed": 2.949,
+      "stage": "Validating evidence links"
+    },
+    {
+      "type": "stage",
+      "elapsed": 2.95,
+      "stage": "Preparing your Attention Map"
+    },
+    {
+      "type": "result",
+      "elapsed": 2.95,
+      "result": {
+        "steps": [
+          {
+            "id": 1,
+            "source": "1. Wait for 5 minutes.",
+            "label": "1. Wait for 5 minutes.",
+            "kind": "hands_off",
+            "fixed_minutes": 5,
+            "rest_minutes": 5,
+            "rule_supported": true,
+            "review_needed": false,
+            "reason": "Exact duration quoted in source",
+            "evidence": [
+              {
+                "note_id": 2,
+                "target_id": 1,
+                "relation": "after",
+                "source": "2. After that wait, record the label.",
+                "target_source": "1. Wait for 5 minutes."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "source": "2. After that wait, record the label.",
+            "label": "2. After that wait, record the label.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "Source does not confirm a simple uninterrupted wait; inspect the original",
+            "evidence": [
+              {
+                "note_id": 2,
+                "target_id": 1,
+                "relation": "after",
+                "source": "2. After that wait, record the label.",
+                "target_source": "1. Wait for 5 minutes."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "source": "3. Incubate overnight.",
+            "label": "3. Incubate overnight.",
+            "kind": "review",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": true,
+            "reason": "Variable, repeated or ambiguous duration: review source manually Wait wording outside conservative timer grammar; review source manually",
+            "evidence": []
+          }
+        ],
+        "links": [
+          {
+            "note_id": 2,
+            "target_id": 1,
+            "relation": "after",
+            "source": "2. After that wait, record the label.",
+            "target_source": "1. Wait for 5 minutes."
+          }
+        ],
+        "context_review_ids": [],
+        "rest_windows": 1,
+        "documented_rest_minutes": 5,
+        "review_needed": 1,
+        "engine": "Local Ollama / gemma3:4b · temporal attention links",
+        "mode": "inference",
+        "protocol": "1. Wait for 5 minutes.\n2. After that wait, record the label.\n3. Incubate overnight.",
+        "semantic_scope": "Model suggests temporal source links; deterministic source checks control timers. Every interpretation requires human review.",
+        "wall_seconds": 2.95
+      }
+    }
+  ],
+  "observed_seconds": 3.001,
+  "errors": [],
+  "scope": "Unmodified browser recording; opening prepared demonstration explicitly labeled, followed by actual local Gemma inference. No mocked requests. Selected demo, not representative accuracy evidence."
+}

@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-24T05:46:53.978228+00:00",
+  "annotation": "Coding-assistant labels, authored before v4 tuning/model calls, separately from evaluated Gemma. Not independent human adjudication. Prior v2 holdout now exposed and diagnostic only. New cases share linguistic patterns; no blind external evaluation claimed.",
+  "files": {
+    "development.json": "324eaafe9893f494666532afb77e5bee330cd651951971c3b71f3b3467db3d1c",
+    "holdout.json": "7633542d89a727061f6d2a2ae83b83bafe9b1bb8ad961829a0b6071f12f99fd2"
+  }
+}

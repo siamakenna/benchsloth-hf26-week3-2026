@@ -1,0 +1,40 @@
+{
+  "4b": {
+    "rules": {
+      "exact_link_cases": 20,
+      "exact_links_and_timer_cases": 18,
+      "case_denominator": 30
+    },
+    "model": {
+      "exact_link_cases": 26,
+      "exact_links_and_timer_cases": 24,
+      "case_denominator": 30
+    },
+    "latency": {
+      "n": 30,
+      "mean": 11.553486910899908,
+      "median": 10.56520660800743,
+      "min": 9.23029504402075,
+      "max": 25.093553143000463
+    }
+  },
+  "1b": {
+    "rules": {
+      "exact_link_cases": 20,
+      "exact_links_and_timer_cases": 18,
+      "case_denominator": 30
+    },
+    "model": {
+      "exact_link_cases": 19,
+      "exact_links_and_timer_cases": 17,
+      "case_denominator": 30
+    },
+    "latency": {
+      "n": 30,
+      "mean": 4.902458487564582,
+      "median": 4.545932171487948,
+      "min": 3.8562560900172684,
+      "max": 9.664263331971597
+    }
+  }
+}

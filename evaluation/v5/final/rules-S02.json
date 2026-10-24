@@ -1,0 +1,536 @@
+{
+  "id": "S02",
+  "source": "Incubate 9 minutes.\nThroughout that interval, observe the sample.",
+  "labels": {
+    "1": "none",
+    "2": "during:1"
+  },
+  "snapshot": {
+    "id": "da9af374-bacf-4361-948c-e9d8d2159665",
+    "version": 0,
+    "source_hash": "b235661b0dee1f720ce09a96c9c68bd26e49b3f31aff587d6618c3f1195248c1",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Incubate 9 minutes.",
+          "label": "Incubate 9 minutes.",
+          "kind": "review",
+          "fixed_minutes": 9.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 2",
+          "evidence": [
+            {
+              "note_id": 2,
+              "target_id": 1,
+              "relation": "during",
+              "source": "Throughout that interval, observe the sample.",
+              "target_source": "Incubate 9 minutes.",
+              "proposed": "during:1",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 2,
+                  "start": 0,
+                  "end": 10,
+                  "quote": "Throughout"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "source": "Throughout that interval, observe the sample.",
+          "label": "Throughout that interval, observe the sample.",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "No explicit fixed duration in source",
+          "evidence": [
+            {
+              "note_id": 2,
+              "target_id": 1,
+              "relation": "during",
+              "source": "Throughout that interval, observe the sample.",
+              "target_source": "Incubate 9 minutes.",
+              "proposed": "during:1",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 2,
+                  "start": 0,
+                  "end": 10,
+                  "quote": "Throughout"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "note_id": 2,
+          "target_id": 1,
+          "relation": "during",
+          "source": "Throughout that interval, observe the sample.",
+          "target_source": "Incubate 9 minutes.",
+          "proposed": "during:1",
+          "validation": "verified",
+          "support": [
+            {
+              "source_id": 2,
+              "start": 0,
+              "end": 10,
+              "quote": "Throughout"
+            }
+          ],
+          "reason": "Literal temporal support and valid source occurrence."
+        }
+      ],
+      "rest_windows": 0,
+      "documented_rest_minutes": 0.0,
+      "review_needed": 2,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "rules",
+      "protocol": "Incubate 9 minutes.\nThroughout that interval, observe the sample."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.076,
+        "result": {
+          "source_hash": "b235661b0dee1f720ce09a96c9c68bd26e49b3f31aff587d6618c3f1195248c1",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Incubate 9 minutes.",
+              "start": 0,
+              "end": 19
+            },
+            {
+              "id": 2,
+              "source": "Throughout that interval, observe the sample.",
+              "start": 20,
+              "end": 65
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.166,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 9.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.117,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "during:1"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.218,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "during:1"
+          },
+          "links": [
+            {
+              "note_id": 2,
+              "target_id": 1,
+              "relation": "during",
+              "source": "Throughout that interval, observe the sample.",
+              "target_source": "Incubate 9 minutes.",
+              "proposed": "during:1",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 2,
+                  "start": 0,
+                  "end": 10,
+                  "quote": "Throughout"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 1.256,
+        "result": {
+          "restrictions": [
+            {
+              "note_id": 2,
+              "target_ids": [
+                1
+              ],
+              "reason": "Source requires operator attention during an interval.",
+              "support": [
+                {
+                  "source_id": 2,
+                  "start": 26,
+                  "end": 33,
+                  "quote": "observe"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.155,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Incubate 9 minutes.",
+              "label": "Incubate 9 minutes.",
+              "kind": "review",
+              "fixed_minutes": 9.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 2",
+              "evidence": [
+                {
+                  "note_id": 2,
+                  "target_id": 1,
+                  "relation": "during",
+                  "source": "Throughout that interval, observe the sample.",
+                  "target_source": "Incubate 9 minutes.",
+                  "proposed": "during:1",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 2,
+                      "start": 0,
+                      "end": 10,
+                      "quote": "Throughout"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "source": "Throughout that interval, observe the sample.",
+              "label": "Throughout that interval, observe the sample.",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "No explicit fixed duration in source",
+              "evidence": [
+                {
+                  "note_id": 2,
+                  "target_id": 1,
+                  "relation": "during",
+                  "source": "Throughout that interval, observe the sample.",
+                  "target_source": "Incubate 9 minutes.",
+                  "proposed": "during:1",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 2,
+                      "start": 0,
+                      "end": 10,
+                      "quote": "Throughout"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "note_id": 2,
+              "target_id": 1,
+              "relation": "during",
+              "source": "Throughout that interval, observe the sample.",
+              "target_source": "Incubate 9 minutes.",
+              "proposed": "during:1",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 2,
+                  "start": 0,
+                  "end": 10,
+                  "quote": "Throughout"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ],
+          "rest_windows": 0,
+          "documented_rest_minutes": 0.0,
+          "review_needed": 2,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "rules",
+          "protocol": "Incubate 9 minutes.\nThroughout that interval, observe the sample."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.091,
+        "result": {
+          "items": [
+            {
+              "id": "source-2",
+              "source_ids": [
+                2,
+                1
+              ],
+              "question": "Review source 2: \u201cThroughout that interval, observe the sample.\u201d",
+              "status": "pending",
+              "priority": 1,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "during:1 / verified",
+              "passages": [
+                "Throughout that interval, observe the sample.",
+                "Incubate 9 minutes."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cIncubate 9 minutes.\u201d",
+              "status": "pending",
+              "priority": 3,
+              "reason": "Source restriction: 2",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Incubate 9 minutes."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2
+        ],
+        "elapsed_ms": 0.045,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Incubate 9 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-2",
+              "source_ids": [
+                2,
+                1
+              ],
+              "question": "Review source 2: \u201cThroughout that interval, observe the sample.\u201d",
+              "status": "pending",
+              "priority": 1,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "during:1 / verified",
+              "passages": [
+                "Throughout that interval, observe the sample.",
+                "Incubate 9 minutes."
+              ]
+            },
+            {
+              "id": "source-1",
+              "source_ids": [
+                1
+              ],
+              "question": "Review source 1: \u201cIncubate 9 minutes.\u201d",
+              "status": "pending",
+              "priority": 3,
+              "reason": "Source restriction: 2",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Incubate 9 minutes."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-2",
+          "source_ids": [
+            2,
+            1
+          ],
+          "question": "Review source 2: \u201cThroughout that interval, observe the sample.\u201d",
+          "status": "pending",
+          "priority": 1,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "during:1 / verified",
+          "passages": [
+            "Throughout that interval, observe the sample.",
+            "Incubate 9 minutes."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cIncubate 9 minutes.\u201d",
+          "status": "pending",
+          "priority": 3,
+          "reason": "Source restriction: 2",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Incubate 9 minutes."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Incubate 9 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-2",
+          "source_ids": [
+            2,
+            1
+          ],
+          "question": "Review source 2: \u201cThroughout that interval, observe the sample.\u201d",
+          "status": "pending",
+          "priority": 1,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "during:1 / verified",
+          "passages": [
+            "Throughout that interval, observe the sample.",
+            "Incubate 9 minutes."
+          ]
+        },
+        {
+          "id": "source-1",
+          "source_ids": [
+            1
+          ],
+          "question": "Review source 1: \u201cIncubate 9 minutes.\u201d",
+          "status": "pending",
+          "priority": 3,
+          "reason": "Source restriction: 2",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Incubate 9 minutes."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "coverage": [],
+    "model_calls": 0,
+    "notice": "Strong deterministic candidate/section baseline; same verifier and source restriction policy."
+  },
+  "wall_seconds": 0.0024871159985195845
+}

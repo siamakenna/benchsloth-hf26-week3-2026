@@ -1,0 +1,106 @@
+{
+  "label_origin": "Coding-assistant authored; implementer-visible; independent adjudication pending",
+  "cases": [
+    {
+      "id": "D01",
+      "source": "Wait 6 minutes.\nAfter that wait, read the label.",
+      "question": "What follows the wait?",
+      "reference": {
+        "status": "answer",
+        "source_ids": [
+          2
+        ],
+        "association": null
+      },
+      "tags": [
+        "clear"
+      ]
+    },
+    {
+      "id": "D02",
+      "source": "Wait 4 minutes.\nWatch continuously throughout that interval.",
+      "question": "Can I stop watching during the interval?",
+      "reference": {
+        "status": "answer",
+        "source_ids": [
+          2
+        ],
+        "association": null
+      },
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "D03",
+      "source": "The label is incomplete.\nAsk the author to resolve it.",
+      "question": "What temperature is specified?",
+      "reference": {
+        "status": "not_available",
+        "source_ids": [],
+        "association": null
+      },
+      "tags": [
+        "no-answer"
+      ]
+    },
+    {
+      "id": "D04",
+      "source": "Wait 3 minutes.\nWait 3 minutes.\nAfter one of these waits, read the tag.",
+      "question": "Which wait does source 3 refer to?",
+      "reference": {
+        "status": "ambiguous",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "association": {
+          "note_id": 3,
+          "target_id": 0,
+          "relation": "unclear"
+        }
+      },
+      "tags": [
+        "repeated",
+        "association"
+      ]
+    },
+    {
+      "id": "D05",
+      "source": "# Blue rack\nWait 5 minutes.\n# Green rack\nWait 7 minutes.\nOnce the blue-rack interval ends, read its label.",
+      "question": "Which earlier wait does source 5 describe?",
+      "reference": {
+        "status": "answer",
+        "source_ids": [
+          2,
+          5
+        ],
+        "association": {
+          "note_id": 5,
+          "target_id": 2,
+          "relation": "after"
+        }
+      },
+      "tags": [
+        "cross-section",
+        "association"
+      ]
+    },
+    {
+      "id": "D06",
+      "source": "Hold for 8 minutes.\nThat duration is provisional; obtain the missing value.",
+      "question": "What is uncertain?",
+      "reference": {
+        "status": "answer",
+        "source_ids": [
+          2
+        ],
+        "association": null
+      },
+      "tags": [
+        "uncertain"
+      ]
+    }
+  ]
+}

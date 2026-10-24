@@ -1,0 +1,1025 @@
+{
+  "version": 2,
+  "source_hash": "a4d6a26431ccd3025d3cd7515bc2922887f2d4ddbcae65eca4bfc581fba600f3",
+  "phase": "return-handoff",
+  "source_steps": [
+    {
+      "id": 1,
+      "source": "# Specimen A",
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": 2,
+      "source": "Wait 9 minutes.",
+      "start": 13,
+      "end": 28
+    },
+    {
+      "id": 3,
+      "source": "After that wait, record the label.",
+      "start": 29,
+      "end": 63
+    },
+    {
+      "id": 4,
+      "source": "Label the rack.",
+      "start": 64,
+      "end": 79
+    },
+    {
+      "id": 5,
+      "source": "Write the lot.",
+      "start": 80,
+      "end": 94
+    },
+    {
+      "id": 6,
+      "source": "Archive the tag.",
+      "start": 95,
+      "end": 111
+    },
+    {
+      "id": 7,
+      "source": "# Specimen B",
+      "start": 112,
+      "end": 124
+    },
+    {
+      "id": 8,
+      "source": "Wait 4 minutes.",
+      "start": 125,
+      "end": 140
+    },
+    {
+      "id": 9,
+      "source": "After that wait, rinse slides.",
+      "start": 141,
+      "end": 171
+    },
+    {
+      "id": 10,
+      "source": "Record the date.",
+      "start": 172,
+      "end": 188
+    },
+    {
+      "id": 11,
+      "source": "Write the room.",
+      "start": 189,
+      "end": 204
+    },
+    {
+      "id": 12,
+      "source": "Close the sheet.",
+      "start": 205,
+      "end": 221
+    },
+    {
+      "id": 13,
+      "source": "End notes.",
+      "start": 222,
+      "end": 232
+    }
+  ],
+  "decisions": [
+    {
+      "version": 1,
+      "kind": "start_timer",
+      "source_id": 2,
+      "at_ms": 1792850091578,
+      "details": {
+        "kind": "start_timer",
+        "source_id": 2,
+        "review_id": null,
+        "confirmed": true,
+        "demo": true,
+        "target_id": null,
+        "relation": null
+      }
+    },
+    {
+      "version": 2,
+      "kind": "timer_finished",
+      "source_id": null,
+      "at_ms": 1792850101632,
+      "details": {
+        "kind": "timer_finished",
+        "source_id": null,
+        "review_id": null,
+        "confirmed": false,
+        "demo": false,
+        "target_id": null,
+        "relation": null
+      }
+    }
+  ],
+  "trace": [
+    {
+      "seq": 1,
+      "tool": "extract_source_steps",
+      "status": "completed",
+      "source_ids": [],
+      "elapsed_ms": 0.341,
+      "result": {
+        "source_hash": "a4d6a26431ccd3025d3cd7515bc2922887f2d4ddbcae65eca4bfc581fba600f3",
+        "steps": [
+          {
+            "id": 1,
+            "source": "# Specimen A",
+            "start": 0,
+            "end": 12
+          },
+          {
+            "id": 2,
+            "source": "Wait 9 minutes.",
+            "start": 13,
+            "end": 28
+          },
+          {
+            "id": 3,
+            "source": "After that wait, record the label.",
+            "start": 29,
+            "end": 63
+          },
+          {
+            "id": 4,
+            "source": "Label the rack.",
+            "start": 64,
+            "end": 79
+          },
+          {
+            "id": 5,
+            "source": "Write the lot.",
+            "start": 80,
+            "end": 94
+          },
+          {
+            "id": 6,
+            "source": "Archive the tag.",
+            "start": 95,
+            "end": 111
+          },
+          {
+            "id": 7,
+            "source": "# Specimen B",
+            "start": 112,
+            "end": 124
+          },
+          {
+            "id": 8,
+            "source": "Wait 4 minutes.",
+            "start": 125,
+            "end": 140
+          },
+          {
+            "id": 9,
+            "source": "After that wait, rinse slides.",
+            "start": 141,
+            "end": 171
+          },
+          {
+            "id": 10,
+            "source": "Record the date.",
+            "start": 172,
+            "end": 188
+          },
+          {
+            "id": 11,
+            "source": "Write the room.",
+            "start": 189,
+            "end": 204
+          },
+          {
+            "id": 12,
+            "source": "Close the sheet.",
+            "start": 205,
+            "end": 221
+          },
+          {
+            "id": 13,
+            "source": "End notes.",
+            "start": 222,
+            "end": 232
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "parse_explicit_durations",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 0.874,
+      "result": {
+        "steps": [
+          {
+            "id": 1,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 2,
+            "minutes": 9.0,
+            "eligible": true,
+            "reason": "Exact duration quoted in source"
+          },
+          {
+            "id": 3,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 4,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 5,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 6,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 7,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 8,
+            "minutes": 4.0,
+            "eligible": true,
+            "reason": "Exact duration quoted in source"
+          },
+          {
+            "id": 9,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 10,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 11,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 12,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          },
+          {
+            "id": 13,
+            "minutes": null,
+            "eligible": false,
+            "reason": "No explicit fixed duration in source"
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "propose_temporal_links",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 12064.592,
+      "result": {
+        "labels": {
+          "1": "none",
+          "2": "none",
+          "3": "after:2",
+          "4": "none",
+          "5": "none",
+          "6": "none",
+          "7": "none",
+          "8": "none",
+          "9": "after:8",
+          "10": "none",
+          "11": "none",
+          "12": "none",
+          "13": "none"
+        },
+        "model": "gemma3:4b"
+      },
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "verify_source_links",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 1.501,
+      "result": {
+        "labels": {
+          "1": "none",
+          "2": "none",
+          "3": "after:2",
+          "4": "none",
+          "5": "none",
+          "6": "none",
+          "7": "none",
+          "8": "none",
+          "9": "after:8",
+          "10": "none",
+          "11": "none",
+          "12": "none",
+          "13": "none"
+        },
+        "links": [
+          {
+            "note_id": 3,
+            "target_id": 2,
+            "relation": "after",
+            "source": "After that wait, record the label.",
+            "target_source": "Wait 9 minutes.",
+            "proposed": "after:2",
+            "validation": "verified",
+            "support": [
+              {
+                "source_id": 3,
+                "start": 0,
+                "end": 5,
+                "quote": "After"
+              }
+            ],
+            "reason": "Literal temporal support and valid source occurrence."
+          },
+          {
+            "note_id": 9,
+            "target_id": 8,
+            "relation": "after",
+            "source": "After that wait, rinse slides.",
+            "target_source": "Wait 4 minutes.",
+            "proposed": "after:8",
+            "validation": "verified",
+            "support": [
+              {
+                "source_id": 9,
+                "start": 0,
+                "end": 5,
+                "quote": "After"
+              }
+            ],
+            "reason": "Literal temporal support and valid source occurrence."
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "detect_conflicts",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 1.427,
+      "result": {
+        "restrictions": []
+      },
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "build_attention_map",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 0.375,
+      "result": {
+        "steps": [
+          {
+            "id": 1,
+            "source": "# Specimen A",
+            "label": "# Specimen A",
+            "kind": "note",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 2,
+            "source": "Wait 9 minutes.",
+            "label": "Wait 9 minutes.",
+            "kind": "hands_off",
+            "fixed_minutes": 9.0,
+            "rest_minutes": 9.0,
+            "rule_supported": true,
+            "review_needed": false,
+            "reason": "Exact duration quoted in source",
+            "evidence": [
+              {
+                "note_id": 3,
+                "target_id": 2,
+                "relation": "after",
+                "source": "After that wait, record the label.",
+                "target_source": "Wait 9 minutes.",
+                "proposed": "after:2",
+                "validation": "verified",
+                "support": [
+                  {
+                    "source_id": 3,
+                    "start": 0,
+                    "end": 5,
+                    "quote": "After"
+                  }
+                ],
+                "reason": "Literal temporal support and valid source occurrence."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "source": "After that wait, record the label.",
+            "label": "After that wait, record the label.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": [
+              {
+                "note_id": 3,
+                "target_id": 2,
+                "relation": "after",
+                "source": "After that wait, record the label.",
+                "target_source": "Wait 9 minutes.",
+                "proposed": "after:2",
+                "validation": "verified",
+                "support": [
+                  {
+                    "source_id": 3,
+                    "start": 0,
+                    "end": 5,
+                    "quote": "After"
+                  }
+                ],
+                "reason": "Literal temporal support and valid source occurrence."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "source": "Label the rack.",
+            "label": "Label the rack.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 5,
+            "source": "Write the lot.",
+            "label": "Write the lot.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 6,
+            "source": "Archive the tag.",
+            "label": "Archive the tag.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 7,
+            "source": "# Specimen B",
+            "label": "# Specimen B",
+            "kind": "note",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 8,
+            "source": "Wait 4 minutes.",
+            "label": "Wait 4 minutes.",
+            "kind": "hands_off",
+            "fixed_minutes": 4.0,
+            "rest_minutes": 4.0,
+            "rule_supported": true,
+            "review_needed": false,
+            "reason": "Exact duration quoted in source",
+            "evidence": [
+              {
+                "note_id": 9,
+                "target_id": 8,
+                "relation": "after",
+                "source": "After that wait, rinse slides.",
+                "target_source": "Wait 4 minutes.",
+                "proposed": "after:8",
+                "validation": "verified",
+                "support": [
+                  {
+                    "source_id": 9,
+                    "start": 0,
+                    "end": 5,
+                    "quote": "After"
+                  }
+                ],
+                "reason": "Literal temporal support and valid source occurrence."
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "source": "After that wait, rinse slides.",
+            "label": "After that wait, rinse slides.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": [
+              {
+                "note_id": 9,
+                "target_id": 8,
+                "relation": "after",
+                "source": "After that wait, rinse slides.",
+                "target_source": "Wait 4 minutes.",
+                "proposed": "after:8",
+                "validation": "verified",
+                "support": [
+                  {
+                    "source_id": 9,
+                    "start": 0,
+                    "end": 5,
+                    "quote": "After"
+                  }
+                ],
+                "reason": "Literal temporal support and valid source occurrence."
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "source": "Record the date.",
+            "label": "Record the date.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 11,
+            "source": "Write the room.",
+            "label": "Write the room.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 12,
+            "source": "Close the sheet.",
+            "label": "Close the sheet.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          },
+          {
+            "id": 13,
+            "source": "End notes.",
+            "label": "End notes.",
+            "kind": "hands_on",
+            "fixed_minutes": null,
+            "rest_minutes": null,
+            "rule_supported": false,
+            "review_needed": false,
+            "reason": "No explicit fixed duration in source",
+            "evidence": []
+          }
+        ],
+        "links": [
+          {
+            "note_id": 3,
+            "target_id": 2,
+            "relation": "after",
+            "source": "After that wait, record the label.",
+            "target_source": "Wait 9 minutes.",
+            "proposed": "after:2",
+            "validation": "verified",
+            "support": [
+              {
+                "source_id": 3,
+                "start": 0,
+                "end": 5,
+                "quote": "After"
+              }
+            ],
+            "reason": "Literal temporal support and valid source occurrence."
+          },
+          {
+            "note_id": 9,
+            "target_id": 8,
+            "relation": "after",
+            "source": "After that wait, rinse slides.",
+            "target_source": "Wait 4 minutes.",
+            "proposed": "after:8",
+            "validation": "verified",
+            "support": [
+              {
+                "source_id": 9,
+                "start": 0,
+                "end": 5,
+                "quote": "After"
+              }
+            ],
+            "reason": "Literal temporal support and valid source occurrence."
+          }
+        ],
+        "rest_windows": 2,
+        "documented_rest_minutes": 13.0,
+        "review_needed": 0,
+        "engine": "Local Gemma / gemma3:4b · bounded Attention Agent",
+        "mode": "inference",
+        "protocol": "# Specimen A\nWait 9 minutes.\nAfter that wait, record the label.\nLabel the rack.\nWrite the lot.\nArchive the tag.\n# Specimen B\nWait 4 minutes.\nAfter that wait, rinse slides.\nRecord the date.\nWrite the room.\nClose the sheet.\nEnd notes."
+      },
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "prepare_review_queue",
+      "status": "completed",
+      "source_ids": [],
+      "elapsed_ms": 0.014,
+      "result": {
+        "items": []
+      },
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "generate_handoff",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 0.025,
+      "result": {
+        "message": "Ready for your source review.",
+        "next_source_id": 1,
+        "next_source": "# Specimen A",
+        "confirmed_source_ids": [],
+        "pending_reviews": [],
+        "timer": null,
+        "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+        "changes": []
+      },
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "record_user_decision",
+      "status": "completed",
+      "source_ids": [
+        2
+      ],
+      "elapsed_ms": 0.106,
+      "result": {
+        "message": "Ready for your source review.",
+        "next_source_id": 1,
+        "next_source": "# Specimen A",
+        "confirmed_source_ids": [],
+        "pending_reviews": [],
+        "timer": {
+          "source_id": 2,
+          "source": "Wait 9 minutes.",
+          "start_ms": 1792850091578,
+          "end_ms": 1792850101578,
+          "duration_ms": 10000,
+          "status": "running",
+          "demo": true
+        },
+        "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+        "changes": [
+          {
+            "version": 1,
+            "kind": "start_timer",
+            "source_id": 2,
+            "at_ms": 1792850091578,
+            "details": {
+              "kind": "start_timer",
+              "source_id": 2,
+              "review_id": null,
+              "confirmed": true,
+              "demo": true,
+              "target_id": null,
+              "relation": null
+            }
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "record_user_decision",
+      "status": "completed",
+      "source_ids": [],
+      "elapsed_ms": 0.142,
+      "result": {
+        "message": "Welcome back. Here’s where you left off.",
+        "next_source_id": 3,
+        "next_source": "After that wait, record the label.",
+        "confirmed_source_ids": [],
+        "pending_reviews": [],
+        "timer": {
+          "source_id": 2,
+          "source": "Wait 9 minutes.",
+          "start_ms": 1792850091578,
+          "end_ms": 1792850101578,
+          "duration_ms": 10000,
+          "status": "completed",
+          "demo": true,
+          "elapsed_ms": 10054
+        },
+        "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+        "changes": [
+          {
+            "version": 1,
+            "kind": "start_timer",
+            "source_id": 2,
+            "at_ms": 1792850091578,
+            "details": {
+              "kind": "start_timer",
+              "source_id": 2,
+              "review_id": null,
+              "confirmed": true,
+              "demo": true,
+              "target_id": null,
+              "relation": null
+            }
+          },
+          {
+            "version": 2,
+            "kind": "timer_finished",
+            "source_id": null,
+            "at_ms": 1792850101632,
+            "details": {
+              "kind": "timer_finished",
+              "source_id": null,
+              "review_id": null,
+              "confirmed": false,
+              "demo": false,
+              "target_id": null,
+              "relation": null
+            }
+          }
+        ]
+      },
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "generate_handoff",
+      "status": "completed",
+      "source_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "elapsed_ms": 0.073,
+      "result": {
+        "message": "Welcome back. Here’s where you left off.",
+        "next_source_id": 3,
+        "next_source": "After that wait, record the label.",
+        "confirmed_source_ids": [],
+        "pending_reviews": [],
+        "timer": {
+          "source_id": 2,
+          "source": "Wait 9 minutes.",
+          "start_ms": 1792850091578,
+          "end_ms": 1792850101578,
+          "duration_ms": 10000,
+          "status": "completed",
+          "demo": true,
+          "elapsed_ms": 10054
+        },
+        "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+        "changes": [
+          {
+            "version": 1,
+            "kind": "start_timer",
+            "source_id": 2,
+            "at_ms": 1792850091578,
+            "details": {
+              "kind": "start_timer",
+              "source_id": 2,
+              "review_id": null,
+              "confirmed": true,
+              "demo": true,
+              "target_id": null,
+              "relation": null
+            }
+          },
+          {
+            "version": 2,
+            "kind": "timer_finished",
+            "source_id": null,
+            "at_ms": 1792850101632,
+            "details": {
+              "kind": "timer_finished",
+              "source_id": null,
+              "review_id": null,
+              "confirmed": false,
+              "demo": false,
+              "target_id": null,
+              "relation": null
+            }
+          }
+        ]
+      },
+      "error": null
+    }
+  ],
+  "handoff": {
+    "message": "Welcome back. Here’s where you left off.",
+    "next_source_id": 3,
+    "next_source": "After that wait, record the label.",
+    "confirmed_source_ids": [],
+    "pending_reviews": [],
+    "timer": {
+      "source_id": 2,
+      "source": "Wait 9 minutes.",
+      "start_ms": 1792850091578,
+      "end_ms": 1792850101578,
+      "duration_ms": 10000,
+      "status": "completed",
+      "demo": true,
+      "elapsed_ms": 10054
+    },
+    "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+    "changes": [
+      {
+        "version": 1,
+        "kind": "start_timer",
+        "source_id": 2,
+        "at_ms": 1792850091578,
+        "details": {
+          "kind": "start_timer",
+          "source_id": 2,
+          "review_id": null,
+          "confirmed": true,
+          "demo": true,
+          "target_id": null,
+          "relation": null
+        }
+      },
+      {
+        "version": 2,
+        "kind": "timer_finished",
+        "source_id": null,
+        "at_ms": 1792850101632,
+        "details": {
+          "kind": "timer_finished",
+          "source_id": null,
+          "review_id": null,
+          "confirmed": false,
+          "demo": false,
+          "target_id": null,
+          "relation": null
+        }
+      }
+    ]
+  }
+}

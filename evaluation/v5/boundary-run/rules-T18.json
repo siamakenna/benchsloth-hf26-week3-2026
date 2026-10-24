@@ -1,0 +1,1235 @@
+{
+  "id": "T18",
+  "source": "# A\nWait 4 minutes.\nAfter that wait, label the rack.\nRecord the lot 4.\nRecord the lot 5.\nRecord the lot 6.\nRecord the lot 7.\nRecord the lot 8.\nRecord the lot 9.\nRecord the lot 10.\n# B\nWait 9 minutes.\nAfter the first wait in this section, archive the tag.\nWrite the date 14.\nWrite the date 15.\nWrite the date 16.\nWrite the date 17.\nWrite the date 18.",
+  "labels": {
+    "1": "none",
+    "2": "none",
+    "3": "after:2",
+    "4": "none",
+    "5": "none",
+    "6": "none",
+    "7": "none",
+    "8": "none",
+    "9": "none",
+    "10": "none",
+    "11": "none",
+    "12": "none",
+    "13": "after:12",
+    "14": "none",
+    "15": "none",
+    "16": "none",
+    "17": "none",
+    "18": "none"
+  },
+  "snapshot": {
+    "id": "078d047c-9db1-49a6-b4a5-f67c6e20014f",
+    "version": 0,
+    "source_hash": "14e24778c6c7c5c25acabe088fc735914943a7f4cb85701551cd08e9e9a5637a",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "# A",
+          "label": "# A",
+          "kind": "note",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Wait 4 minutes.",
+          "label": "Wait 4 minutes.",
+          "kind": "hands_off",
+          "fixed_minutes": 4.0,
+          "rest_minutes": 4.0,
+          "rule_supported": true,
+          "review_needed": false,
+          "reason": "Exact duration quoted in source",
+          "evidence": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "after",
+              "source": "After that wait, label the rack.",
+              "target_source": "Wait 4 minutes.",
+              "proposed": "after:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "source": "After that wait, label the rack.",
+          "label": "After that wait, label the rack.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "after",
+              "source": "After that wait, label the rack.",
+              "target_source": "Wait 4 minutes.",
+              "proposed": "after:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "source": "Record the lot 4.",
+          "label": "Record the lot 4.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 5,
+          "source": "Record the lot 5.",
+          "label": "Record the lot 5.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 6,
+          "source": "Record the lot 6.",
+          "label": "Record the lot 6.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 7,
+          "source": "Record the lot 7.",
+          "label": "Record the lot 7.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 8,
+          "source": "Record the lot 8.",
+          "label": "Record the lot 8.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 9,
+          "source": "Record the lot 9.",
+          "label": "Record the lot 9.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 10,
+          "source": "Record the lot 10.",
+          "label": "Record the lot 10.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 11,
+          "source": "# B",
+          "label": "# B",
+          "kind": "note",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 12,
+          "source": "Wait 9 minutes.",
+          "label": "Wait 9 minutes.",
+          "kind": "hands_off",
+          "fixed_minutes": 9.0,
+          "rest_minutes": 9.0,
+          "rule_supported": true,
+          "review_needed": false,
+          "reason": "Exact duration quoted in source",
+          "evidence": [
+            {
+              "note_id": 13,
+              "target_id": 12,
+              "relation": "after",
+              "source": "After the first wait in this section, archive the tag.",
+              "target_source": "Wait 9 minutes.",
+              "proposed": "after:12",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 13,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "source": "After the first wait in this section, archive the tag.",
+          "label": "After the first wait in this section, archive the tag.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": [
+            {
+              "note_id": 13,
+              "target_id": 12,
+              "relation": "after",
+              "source": "After the first wait in this section, archive the tag.",
+              "target_source": "Wait 9 minutes.",
+              "proposed": "after:12",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 13,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "source": "Write the date 14.",
+          "label": "Write the date 14.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 15,
+          "source": "Write the date 15.",
+          "label": "Write the date 15.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 16,
+          "source": "Write the date 16.",
+          "label": "Write the date 16.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 17,
+          "source": "Write the date 17.",
+          "label": "Write the date 17.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 18,
+          "source": "Write the date 18.",
+          "label": "Write the date 18.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        }
+      ],
+      "links": [
+        {
+          "note_id": 3,
+          "target_id": 2,
+          "relation": "after",
+          "source": "After that wait, label the rack.",
+          "target_source": "Wait 4 minutes.",
+          "proposed": "after:2",
+          "validation": "verified",
+          "support": [
+            {
+              "source_id": 3,
+              "start": 0,
+              "end": 5,
+              "quote": "After"
+            }
+          ],
+          "reason": "Literal temporal support and valid source occurrence."
+        },
+        {
+          "note_id": 13,
+          "target_id": 12,
+          "relation": "after",
+          "source": "After the first wait in this section, archive the tag.",
+          "target_source": "Wait 9 minutes.",
+          "proposed": "after:12",
+          "validation": "verified",
+          "support": [
+            {
+              "source_id": 13,
+              "start": 0,
+              "end": 5,
+              "quote": "After"
+            }
+          ],
+          "reason": "Literal temporal support and valid source occurrence."
+        }
+      ],
+      "rest_windows": 2,
+      "documented_rest_minutes": 13.0,
+      "review_needed": 0,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "rules",
+      "protocol": "# A\nWait 4 minutes.\nAfter that wait, label the rack.\nRecord the lot 4.\nRecord the lot 5.\nRecord the lot 6.\nRecord the lot 7.\nRecord the lot 8.\nRecord the lot 9.\nRecord the lot 10.\n# B\nWait 9 minutes.\nAfter the first wait in this section, archive the tag.\nWrite the date 14.\nWrite the date 15.\nWrite the date 16.\nWrite the date 17.\nWrite the date 18."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.376,
+        "result": {
+          "source_hash": "14e24778c6c7c5c25acabe088fc735914943a7f4cb85701551cd08e9e9a5637a",
+          "steps": [
+            {
+              "id": 1,
+              "source": "# A",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "id": 2,
+              "source": "Wait 4 minutes.",
+              "start": 4,
+              "end": 19
+            },
+            {
+              "id": 3,
+              "source": "After that wait, label the rack.",
+              "start": 20,
+              "end": 52
+            },
+            {
+              "id": 4,
+              "source": "Record the lot 4.",
+              "start": 53,
+              "end": 70
+            },
+            {
+              "id": 5,
+              "source": "Record the lot 5.",
+              "start": 71,
+              "end": 88
+            },
+            {
+              "id": 6,
+              "source": "Record the lot 6.",
+              "start": 89,
+              "end": 106
+            },
+            {
+              "id": 7,
+              "source": "Record the lot 7.",
+              "start": 107,
+              "end": 124
+            },
+            {
+              "id": 8,
+              "source": "Record the lot 8.",
+              "start": 125,
+              "end": 142
+            },
+            {
+              "id": 9,
+              "source": "Record the lot 9.",
+              "start": 143,
+              "end": 160
+            },
+            {
+              "id": 10,
+              "source": "Record the lot 10.",
+              "start": 161,
+              "end": 179
+            },
+            {
+              "id": 11,
+              "source": "# B",
+              "start": 180,
+              "end": 183
+            },
+            {
+              "id": 12,
+              "source": "Wait 9 minutes.",
+              "start": 184,
+              "end": 199
+            },
+            {
+              "id": 13,
+              "source": "After the first wait in this section, archive the tag.",
+              "start": 200,
+              "end": 254
+            },
+            {
+              "id": 14,
+              "source": "Write the date 14.",
+              "start": 255,
+              "end": 273
+            },
+            {
+              "id": 15,
+              "source": "Write the date 15.",
+              "start": 274,
+              "end": 292
+            },
+            {
+              "id": 16,
+              "source": "Write the date 16.",
+              "start": 293,
+              "end": 311
+            },
+            {
+              "id": 17,
+              "source": "Write the date 17.",
+              "start": 312,
+              "end": 330
+            },
+            {
+              "id": 18,
+              "source": "Write the date 18.",
+              "start": 331,
+              "end": 349
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 2.234,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 2,
+              "minutes": 4.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 4,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 5,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 6,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 7,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 8,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 9,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 10,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 11,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 12,
+              "minutes": 9.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 13,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 14,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 15,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 16,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 17,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 18,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 0.51,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "after:2",
+            "4": "none",
+            "5": "none",
+            "6": "none",
+            "7": "none",
+            "8": "none",
+            "9": "none",
+            "10": "none",
+            "11": "none",
+            "12": "none",
+            "13": "after:12",
+            "14": "none",
+            "15": "none",
+            "16": "none",
+            "17": "none",
+            "18": "none"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 0.682,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "after:2",
+            "4": "none",
+            "5": "none",
+            "6": "none",
+            "7": "none",
+            "8": "none",
+            "9": "none",
+            "10": "none",
+            "11": "none",
+            "12": "none",
+            "13": "after:12",
+            "14": "none",
+            "15": "none",
+            "16": "none",
+            "17": "none",
+            "18": "none"
+          },
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "after",
+              "source": "After that wait, label the rack.",
+              "target_source": "Wait 4 minutes.",
+              "proposed": "after:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            },
+            {
+              "note_id": 13,
+              "target_id": 12,
+              "relation": "after",
+              "source": "After the first wait in this section, archive the tag.",
+              "target_source": "Wait 9 minutes.",
+              "proposed": "after:12",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 13,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 2.648,
+        "result": {
+          "restrictions": []
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 0.579,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "# A",
+              "label": "# A",
+              "kind": "note",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Wait 4 minutes.",
+              "label": "Wait 4 minutes.",
+              "kind": "hands_off",
+              "fixed_minutes": 4.0,
+              "rest_minutes": 4.0,
+              "rule_supported": true,
+              "review_needed": false,
+              "reason": "Exact duration quoted in source",
+              "evidence": [
+                {
+                  "note_id": 3,
+                  "target_id": 2,
+                  "relation": "after",
+                  "source": "After that wait, label the rack.",
+                  "target_source": "Wait 4 minutes.",
+                  "proposed": "after:2",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 3,
+                      "start": 0,
+                      "end": 5,
+                      "quote": "After"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "source": "After that wait, label the rack.",
+              "label": "After that wait, label the rack.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": [
+                {
+                  "note_id": 3,
+                  "target_id": 2,
+                  "relation": "after",
+                  "source": "After that wait, label the rack.",
+                  "target_source": "Wait 4 minutes.",
+                  "proposed": "after:2",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 3,
+                      "start": 0,
+                      "end": 5,
+                      "quote": "After"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "source": "Record the lot 4.",
+              "label": "Record the lot 4.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 5,
+              "source": "Record the lot 5.",
+              "label": "Record the lot 5.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 6,
+              "source": "Record the lot 6.",
+              "label": "Record the lot 6.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 7,
+              "source": "Record the lot 7.",
+              "label": "Record the lot 7.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 8,
+              "source": "Record the lot 8.",
+              "label": "Record the lot 8.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 9,
+              "source": "Record the lot 9.",
+              "label": "Record the lot 9.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 10,
+              "source": "Record the lot 10.",
+              "label": "Record the lot 10.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 11,
+              "source": "# B",
+              "label": "# B",
+              "kind": "note",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 12,
+              "source": "Wait 9 minutes.",
+              "label": "Wait 9 minutes.",
+              "kind": "hands_off",
+              "fixed_minutes": 9.0,
+              "rest_minutes": 9.0,
+              "rule_supported": true,
+              "review_needed": false,
+              "reason": "Exact duration quoted in source",
+              "evidence": [
+                {
+                  "note_id": 13,
+                  "target_id": 12,
+                  "relation": "after",
+                  "source": "After the first wait in this section, archive the tag.",
+                  "target_source": "Wait 9 minutes.",
+                  "proposed": "after:12",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 13,
+                      "start": 0,
+                      "end": 5,
+                      "quote": "After"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "source": "After the first wait in this section, archive the tag.",
+              "label": "After the first wait in this section, archive the tag.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": [
+                {
+                  "note_id": 13,
+                  "target_id": 12,
+                  "relation": "after",
+                  "source": "After the first wait in this section, archive the tag.",
+                  "target_source": "Wait 9 minutes.",
+                  "proposed": "after:12",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 13,
+                      "start": 0,
+                      "end": 5,
+                      "quote": "After"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 14,
+              "source": "Write the date 14.",
+              "label": "Write the date 14.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 15,
+              "source": "Write the date 15.",
+              "label": "Write the date 15.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 16,
+              "source": "Write the date 16.",
+              "label": "Write the date 16.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 17,
+              "source": "Write the date 17.",
+              "label": "Write the date 17.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 18,
+              "source": "Write the date 18.",
+              "label": "Write the date 18.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            }
+          ],
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "after",
+              "source": "After that wait, label the rack.",
+              "target_source": "Wait 4 minutes.",
+              "proposed": "after:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            },
+            {
+              "note_id": 13,
+              "target_id": 12,
+              "relation": "after",
+              "source": "After the first wait in this section, archive the tag.",
+              "target_source": "Wait 9 minutes.",
+              "proposed": "after:12",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 13,
+                  "start": 0,
+                  "end": 5,
+                  "quote": "After"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ],
+          "rest_windows": 2,
+          "documented_rest_minutes": 13.0,
+          "review_needed": 0,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "rules",
+          "protocol": "# A\nWait 4 minutes.\nAfter that wait, label the rack.\nRecord the lot 4.\nRecord the lot 5.\nRecord the lot 6.\nRecord the lot 7.\nRecord the lot 8.\nRecord the lot 9.\nRecord the lot 10.\n# B\nWait 9 minutes.\nAfter the first wait in this section, archive the tag.\nWrite the date 14.\nWrite the date 15.\nWrite the date 16.\nWrite the date 17.\nWrite the date 18."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.04,
+        "result": {
+          "items": []
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "elapsed_ms": 0.059,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "# A",
+          "confirmed_source_ids": [],
+          "pending_reviews": [],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": []
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "# A",
+      "confirmed_source_ids": [],
+      "pending_reviews": [],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "coverage": [],
+    "model_calls": 0,
+    "notice": "Strong deterministic candidate/section baseline; same verifier and source restriction policy."
+  },
+  "wall_seconds": 0.007859513978473842
+}

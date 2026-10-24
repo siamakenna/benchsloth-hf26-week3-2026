@@ -1,0 +1,366 @@
+{
+  "id": "S03",
+  "source": "Hold for 4 minutes.\nRinse the slides.\nIncubate overnight.",
+  "labels": {
+    "1": "none",
+    "2": "none",
+    "3": "none"
+  },
+  "snapshot": {
+    "id": "e185448f-6bc5-41bd-ae4b-9890fe6b9d22",
+    "version": 0,
+    "source_hash": "a13b74e498c5d3a7e2ea32cada4cec939518e34f23df8bebd878b6353cee2b57",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Hold for 4 minutes.",
+          "label": "Hold for 4 minutes.",
+          "kind": "hands_off",
+          "fixed_minutes": 4.0,
+          "rest_minutes": 4.0,
+          "rule_supported": true,
+          "review_needed": false,
+          "reason": "Exact duration quoted in source",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Rinse the slides.",
+          "label": "Rinse the slides.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 3,
+          "source": "Incubate overnight.",
+          "label": "Incubate overnight.",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "Variable, repeated or ambiguous duration: review source manually",
+          "evidence": []
+        }
+      ],
+      "links": [],
+      "rest_windows": 1,
+      "documented_rest_minutes": 4.0,
+      "review_needed": 1,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "inference",
+      "protocol": "Hold for 4 minutes.\nRinse the slides.\nIncubate overnight."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.077,
+        "result": {
+          "source_hash": "a13b74e498c5d3a7e2ea32cada4cec939518e34f23df8bebd878b6353cee2b57",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Hold for 4 minutes.",
+              "start": 0,
+              "end": 19
+            },
+            {
+              "id": 2,
+              "source": "Rinse the slides.",
+              "start": 20,
+              "end": 37
+            },
+            {
+              "id": 3,
+              "source": "Incubate overnight.",
+              "start": 38,
+              "end": 57
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.174,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 4.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "Variable, repeated or ambiguous duration: review source manually"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.083,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.034,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "none"
+          },
+          "links": []
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.487,
+        "result": {
+          "restrictions": []
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.138,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Hold for 4 minutes.",
+              "label": "Hold for 4 minutes.",
+              "kind": "hands_off",
+              "fixed_minutes": 4.0,
+              "rest_minutes": 4.0,
+              "rule_supported": true,
+              "review_needed": false,
+              "reason": "Exact duration quoted in source",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Rinse the slides.",
+              "label": "Rinse the slides.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 3,
+              "source": "Incubate overnight.",
+              "label": "Incubate overnight.",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "Variable, repeated or ambiguous duration: review source manually",
+              "evidence": []
+            }
+          ],
+          "links": [],
+          "rest_windows": 1,
+          "documented_rest_minutes": 4.0,
+          "review_needed": 1,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "inference",
+          "protocol": "Hold for 4 minutes.\nRinse the slides.\nIncubate overnight."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          3
+        ],
+        "elapsed_ms": 0.051,
+        "result": {
+          "items": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cIncubate overnight.\u201d",
+              "status": "pending",
+              "priority": 4,
+              "reason": "Variable, repeated or ambiguous duration: review source manually",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Incubate overnight."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3
+        ],
+        "elapsed_ms": 0.037,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Hold for 4 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3
+              ],
+              "question": "Review source 3: \u201cIncubate overnight.\u201d",
+              "status": "pending",
+              "priority": 4,
+              "reason": "Variable, repeated or ambiguous duration: review source manually",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Incubate overnight."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cIncubate overnight.\u201d",
+          "status": "pending",
+          "priority": 4,
+          "reason": "Variable, repeated or ambiguous duration: review source manually",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Incubate overnight."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Hold for 4 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3
+          ],
+          "question": "Review source 3: \u201cIncubate overnight.\u201d",
+          "status": "pending",
+          "priority": 4,
+          "reason": "Variable, repeated or ambiguous duration: review source manually",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Incubate overnight."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "calls": [],
+    "coverage": [],
+    "model_calls": 0,
+    "wall_seconds": 5.604198668152094e-05,
+    "second_pass_calls": 0,
+    "notice": "No retries. Structural abstentions use no model call; all temporal candidates accounted for."
+  },
+  "wall_seconds": 0.001461028994526714
+}

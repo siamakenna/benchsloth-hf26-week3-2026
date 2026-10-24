@@ -1,0 +1,713 @@
+{
+  "id": "M04",
+  "source": "Wait 4 minutes.\nWait 12 minutes.\nDuring the second wait, watch continuously.\nLabel the rack.\nRecord the date.",
+  "labels": {
+    "1": "none",
+    "2": "none",
+    "3": "during:2",
+    "4": "none",
+    "5": "none"
+  },
+  "snapshot": {
+    "id": "915fc266-6116-4b97-ad24-22c0595b4d9b",
+    "version": 0,
+    "source_hash": "e99289567de33b98bc5bbcad873edacef87ef3ff2a3476969f7030db9b7887df",
+    "phase": "ready-for-review",
+    "plan": {
+      "steps": [
+        {
+          "id": 1,
+          "source": "Wait 4 minutes.",
+          "label": "Wait 4 minutes.",
+          "kind": "hands_off",
+          "fixed_minutes": 4.0,
+          "rest_minutes": 4.0,
+          "rule_supported": true,
+          "review_needed": false,
+          "reason": "Exact duration quoted in source",
+          "evidence": []
+        },
+        {
+          "id": 2,
+          "source": "Wait 12 minutes.",
+          "label": "Wait 12 minutes.",
+          "kind": "review",
+          "fixed_minutes": 12.0,
+          "rest_minutes": null,
+          "rule_supported": true,
+          "review_needed": true,
+          "reason": "Source restriction: 3",
+          "evidence": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "during",
+              "source": "During the second wait, watch continuously.",
+              "target_source": "Wait 12 minutes.",
+              "proposed": "during:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 6,
+                  "quote": "During"
+                },
+                {
+                  "source_id": 3,
+                  "start": 30,
+                  "end": 42,
+                  "quote": "continuously"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "source": "During the second wait, watch continuously.",
+          "label": "During the second wait, watch continuously.",
+          "kind": "review",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": true,
+          "reason": "No explicit fixed duration in source",
+          "evidence": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "during",
+              "source": "During the second wait, watch continuously.",
+              "target_source": "Wait 12 minutes.",
+              "proposed": "during:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 6,
+                  "quote": "During"
+                },
+                {
+                  "source_id": 3,
+                  "start": 30,
+                  "end": 42,
+                  "quote": "continuously"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "source": "Label the rack.",
+          "label": "Label the rack.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        },
+        {
+          "id": 5,
+          "source": "Record the date.",
+          "label": "Record the date.",
+          "kind": "hands_on",
+          "fixed_minutes": null,
+          "rest_minutes": null,
+          "rule_supported": false,
+          "review_needed": false,
+          "reason": "No explicit fixed duration in source",
+          "evidence": []
+        }
+      ],
+      "links": [
+        {
+          "note_id": 3,
+          "target_id": 2,
+          "relation": "during",
+          "source": "During the second wait, watch continuously.",
+          "target_source": "Wait 12 minutes.",
+          "proposed": "during:2",
+          "validation": "verified",
+          "support": [
+            {
+              "source_id": 3,
+              "start": 0,
+              "end": 6,
+              "quote": "During"
+            },
+            {
+              "source_id": 3,
+              "start": 30,
+              "end": 42,
+              "quote": "continuously"
+            }
+          ],
+          "reason": "Literal temporal support and valid source occurrence."
+        }
+      ],
+      "rest_windows": 1,
+      "documented_rest_minutes": 4.0,
+      "review_needed": 2,
+      "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+      "mode": "rules",
+      "protocol": "Wait 4 minutes.\nWait 12 minutes.\nDuring the second wait, watch continuously.\nLabel the rack.\nRecord the date."
+    },
+    "trace": [
+      {
+        "seq": 1,
+        "tool": "extract_source_steps",
+        "status": "completed",
+        "source_ids": [],
+        "elapsed_ms": 0.096,
+        "result": {
+          "source_hash": "e99289567de33b98bc5bbcad873edacef87ef3ff2a3476969f7030db9b7887df",
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 4 minutes.",
+              "start": 0,
+              "end": 15
+            },
+            {
+              "id": 2,
+              "source": "Wait 12 minutes.",
+              "start": 16,
+              "end": 32
+            },
+            {
+              "id": 3,
+              "source": "During the second wait, watch continuously.",
+              "start": 33,
+              "end": 76
+            },
+            {
+              "id": 4,
+              "source": "Label the rack.",
+              "start": 77,
+              "end": 92
+            },
+            {
+              "id": 5,
+              "source": "Record the date.",
+              "start": 93,
+              "end": 109
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 2,
+        "tool": "parse_explicit_durations",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.285,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "minutes": 4.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 2,
+              "minutes": 12.0,
+              "eligible": true,
+              "reason": "Exact duration quoted in source"
+            },
+            {
+              "id": 3,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 4,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            },
+            {
+              "id": 5,
+              "minutes": null,
+              "eligible": false,
+              "reason": "No explicit fixed duration in source"
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 3,
+        "tool": "propose_temporal_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.137,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "during:2",
+            "4": "none",
+            "5": "none"
+          },
+          "model": "Source-only abstention / no model call"
+        },
+        "error": null
+      },
+      {
+        "seq": 4,
+        "tool": "verify_source_links",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.246,
+        "result": {
+          "labels": {
+            "1": "none",
+            "2": "none",
+            "3": "during:2",
+            "4": "none",
+            "5": "none"
+          },
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "during",
+              "source": "During the second wait, watch continuously.",
+              "target_source": "Wait 12 minutes.",
+              "proposed": "during:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 6,
+                  "quote": "During"
+                },
+                {
+                  "source_id": 3,
+                  "start": 30,
+                  "end": 42,
+                  "quote": "continuously"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 5,
+        "tool": "detect_conflicts",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.483,
+        "result": {
+          "restrictions": [
+            {
+              "note_id": 3,
+              "target_ids": [
+                2
+              ],
+              "reason": "Source requires operator attention during an interval.",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 24,
+                  "end": 29,
+                  "quote": "watch"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 6,
+        "tool": "build_attention_map",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.169,
+        "result": {
+          "steps": [
+            {
+              "id": 1,
+              "source": "Wait 4 minutes.",
+              "label": "Wait 4 minutes.",
+              "kind": "hands_off",
+              "fixed_minutes": 4.0,
+              "rest_minutes": 4.0,
+              "rule_supported": true,
+              "review_needed": false,
+              "reason": "Exact duration quoted in source",
+              "evidence": []
+            },
+            {
+              "id": 2,
+              "source": "Wait 12 minutes.",
+              "label": "Wait 12 minutes.",
+              "kind": "review",
+              "fixed_minutes": 12.0,
+              "rest_minutes": null,
+              "rule_supported": true,
+              "review_needed": true,
+              "reason": "Source restriction: 3",
+              "evidence": [
+                {
+                  "note_id": 3,
+                  "target_id": 2,
+                  "relation": "during",
+                  "source": "During the second wait, watch continuously.",
+                  "target_source": "Wait 12 minutes.",
+                  "proposed": "during:2",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 3,
+                      "start": 0,
+                      "end": 6,
+                      "quote": "During"
+                    },
+                    {
+                      "source_id": 3,
+                      "start": 30,
+                      "end": 42,
+                      "quote": "continuously"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "source": "During the second wait, watch continuously.",
+              "label": "During the second wait, watch continuously.",
+              "kind": "review",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": true,
+              "reason": "No explicit fixed duration in source",
+              "evidence": [
+                {
+                  "note_id": 3,
+                  "target_id": 2,
+                  "relation": "during",
+                  "source": "During the second wait, watch continuously.",
+                  "target_source": "Wait 12 minutes.",
+                  "proposed": "during:2",
+                  "validation": "verified",
+                  "support": [
+                    {
+                      "source_id": 3,
+                      "start": 0,
+                      "end": 6,
+                      "quote": "During"
+                    },
+                    {
+                      "source_id": 3,
+                      "start": 30,
+                      "end": 42,
+                      "quote": "continuously"
+                    }
+                  ],
+                  "reason": "Literal temporal support and valid source occurrence."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "source": "Label the rack.",
+              "label": "Label the rack.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            },
+            {
+              "id": 5,
+              "source": "Record the date.",
+              "label": "Record the date.",
+              "kind": "hands_on",
+              "fixed_minutes": null,
+              "rest_minutes": null,
+              "rule_supported": false,
+              "review_needed": false,
+              "reason": "No explicit fixed duration in source",
+              "evidence": []
+            }
+          ],
+          "links": [
+            {
+              "note_id": 3,
+              "target_id": 2,
+              "relation": "during",
+              "source": "During the second wait, watch continuously.",
+              "target_source": "Wait 12 minutes.",
+              "proposed": "during:2",
+              "validation": "verified",
+              "support": [
+                {
+                  "source_id": 3,
+                  "start": 0,
+                  "end": 6,
+                  "quote": "During"
+                },
+                {
+                  "source_id": 3,
+                  "start": 30,
+                  "end": 42,
+                  "quote": "continuously"
+                }
+              ],
+              "reason": "Literal temporal support and valid source occurrence."
+            }
+          ],
+          "rest_windows": 1,
+          "documented_rest_minutes": 4.0,
+          "review_needed": 2,
+          "engine": "Local Gemma / gemma3:4b \u00b7 bounded Attention Agent",
+          "mode": "rules",
+          "protocol": "Wait 4 minutes.\nWait 12 minutes.\nDuring the second wait, watch continuously.\nLabel the rack.\nRecord the date."
+        },
+        "error": null
+      },
+      {
+        "seq": 7,
+        "tool": "prepare_review_queue",
+        "status": "completed",
+        "source_ids": [
+          2,
+          3
+        ],
+        "elapsed_ms": 0.12,
+        "result": {
+          "items": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3,
+                2
+              ],
+              "question": "Review source 3: \u201cDuring the second wait, watch continuously.\u201d",
+              "status": "pending",
+              "priority": 1,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "during:2 / verified",
+              "passages": [
+                "During the second wait, watch continuously.",
+                "Wait 12 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 12 minutes.\u201d",
+              "status": "pending",
+              "priority": 3,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 12 minutes."
+              ]
+            }
+          ]
+        },
+        "error": null
+      },
+      {
+        "seq": 8,
+        "tool": "generate_handoff",
+        "status": "completed",
+        "source_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "elapsed_ms": 0.041,
+        "result": {
+          "message": "Ready for your source review.",
+          "next_source_id": 1,
+          "next_source": "Wait 4 minutes.",
+          "confirmed_source_ids": [],
+          "pending_reviews": [
+            {
+              "id": "source-3",
+              "source_ids": [
+                3,
+                2
+              ],
+              "question": "Review source 3: \u201cDuring the second wait, watch continuously.\u201d",
+              "status": "pending",
+              "priority": 1,
+              "reason": "No explicit fixed duration in source",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "during:2 / verified",
+              "passages": [
+                "During the second wait, watch continuously.",
+                "Wait 12 minutes."
+              ]
+            },
+            {
+              "id": "source-2",
+              "source_ids": [
+                2
+              ],
+              "question": "Review source 2: \u201cWait 12 minutes.\u201d",
+              "status": "pending",
+              "priority": 3,
+              "reason": "Source restriction: 3",
+              "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+              "proposal": "No accepted association",
+              "passages": [
+                "Wait 12 minutes."
+              ]
+            }
+          ],
+          "timer": null,
+          "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+          "changes": []
+        },
+        "error": null
+      }
+    ],
+    "reviews": {
+      "items": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3,
+            2
+          ],
+          "question": "Review source 3: \u201cDuring the second wait, watch continuously.\u201d",
+          "status": "pending",
+          "priority": 1,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "during:2 / verified",
+          "passages": [
+            "During the second wait, watch continuously.",
+            "Wait 12 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 12 minutes.\u201d",
+          "status": "pending",
+          "priority": 3,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 12 minutes."
+          ]
+        }
+      ]
+    },
+    "confirmed": [],
+    "timer": null,
+    "handoff": {
+      "message": "Ready for your source review.",
+      "next_source_id": 1,
+      "next_source": "Wait 4 minutes.",
+      "confirmed_source_ids": [],
+      "pending_reviews": [
+        {
+          "id": "source-3",
+          "source_ids": [
+            3,
+            2
+          ],
+          "question": "Review source 3: \u201cDuring the second wait, watch continuously.\u201d",
+          "status": "pending",
+          "priority": 1,
+          "reason": "No explicit fixed duration in source",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "during:2 / verified",
+          "passages": [
+            "During the second wait, watch continuously.",
+            "Wait 12 minutes."
+          ]
+        },
+        {
+          "id": "source-2",
+          "source_ids": [
+            2
+          ],
+          "question": "Review source 2: \u201cWait 12 minutes.\u201d",
+          "status": "pending",
+          "priority": 3,
+          "reason": "Source restriction: 3",
+          "impact": "Source restrictions govern timer eligibility; association correction changes interpretation/display only.",
+          "proposal": "No accepted association",
+          "passages": [
+            "Wait 12 minutes."
+          ]
+        }
+      ],
+      "timer": null,
+      "observed_activity": "Only browser/user decisions were recorded; no physical experiment was observed.",
+      "changes": []
+    }
+  },
+  "raw_evidence": {
+    "coverage": [],
+    "model_calls": 0,
+    "notice": "Strong deterministic candidate/section baseline; same verifier and source restriction policy."
+  },
+  "wall_seconds": 0.0020098619861528277
+}

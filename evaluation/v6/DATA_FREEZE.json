@@ -1,0 +1,9 @@
+{
+  "protocol": "Freeze before semantic prompt development; one final run after development selection. Do not tune on final outcomes.",
+  "files": {
+    "evaluation/v6/development.json": "f197258acad361ad2e65cc3afd502f550b59071c56ff5551dca91d174147c63a",
+    "evaluation/v6/final.json": "0ce26d244662019fad612590999d44290f2d10bcddf8c8e4f4445dd348420bf5"
+  },
+  "primary": "Exact answer status and exact evidence ID set; no prose preference. Secondary recall@3 for retrieval baseline, citation validity, abstention, association only on question-specific labeled subset. Confidence intervals are descriptive Wilson intervals, not generalization guarantees.",
+  "independence": "Synthetic, assistant-authored, implementer-visible. Related wording/long distractors reduce effective independence. Human n=0."
+}

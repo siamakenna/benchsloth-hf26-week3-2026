@@ -1,0 +1,11 @@
+{
+  "files": {
+    "agent_v5.py": "fe75bd2e1018266ed2d5c824dbe05fa6b4ccd36ad7880b1ffd8fa688e8f49541",
+    "association_v5.py": "63f61e54e35aaa6d2a6d7fd002c9a509d8210d6d03e4808a85ddf172be6f5d56",
+    "evaluation/v5/run.py": "f764c6e65e830b8d705ba31ddc59b1e60f723ba47d6a9343bd84ab380129ec8c",
+    "attention_agent.py": "47d7a930b7ed59834e03071c6585e45ebad2f0df785572e761fedf4bc689b62d",
+    "attention.py": "d5852660d1eeb92a27bc24ba4327e38e5113fd8f45ad26a7d31135e005520be2",
+    "app.py": "49f374b6aa26c57a742bb7ff4506184b91d72fc278c5dda0b3e4be9fbeabedfd"
+  },
+  "selection": "Focused pair relation schema; scoped/ordinal source candidates; explicit abstentions and coverage. No second pass selected. Development first/second relationships recovered, ordinal monitoring and section scope pass. Plural-reference omission in development fixed before freeze. Strong rules share structure."
+}

@@ -1,0 +1,54 @@
+{
+  "passed": 21,
+  "checks": [
+    "map above fold at intended repo subpath",
+    "no private backend required",
+    "scenario B independently interactive",
+    "scenario C independently interactive",
+    "scenario A independently interactive",
+    "static correction audit",
+    "static correction preserves restrictions",
+    "static corrected checkpoint restored",
+    "demo completed state cannot imply source interval elapsed",
+    "static next original source",
+    "relative asset evidence/index.html",
+    "relative asset evidence/summary.json",
+    "relative asset evidence/boundary-summary.json",
+    "relative asset downloads/benchsloth-source.zip",
+    "static receipt export",
+    "subpath mobile no overflow",
+    "subpath keyboard scenario",
+    "subpath reduced motion",
+    "actual captioned recording60–90seconds",
+    "no root paths or private API requests",
+    "no static script errors"
+  ],
+  "video_seconds": 75.84,
+  "frames": [
+    {
+      "time": 10,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "time": 35,
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "time": 65,
+      "width": 1440,
+      "height": 1000
+    }
+  ],
+  "requests": [
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/",
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/",
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/assets/v5/demo-captioned.webm",
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/assets/v5/demo-captioned.webm",
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/assets/v5/demo-captioned.webm",
+    "http://127.0.0.1:8789/benchsloth-hf26-week3-2026/assets/v5/demo-captioned.webm"
+  ],
+  "errors": [],
+  "scope": "Complete applicable static flows at intended repository subpath, local byte-range HTTP. Not a public deployment; no human participant."
+}

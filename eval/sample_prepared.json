@@ -1,0 +1,15 @@
+{
+  "protocol": "1. Label three microscopy slides and set up the humidified chamber.\n2. Add blocking buffer to each slide.\n3. Incubate for 20 minutes at room temperature.\n4. Aspirate buffer and apply prepared primary antibody dilution.\n5. Incubate for 60 minutes in the humidified chamber.\n6. Wash slides 3 times for 5 minutes each.\n7. Add prepared secondary antibody dilution, protected from light.\n8. Incubate for 30 minutes, protected from light.\n9. Rinse slides and mount with prepared mounting medium.\n10. Allow mounting medium to cure overnight before imaging.",
+  "steps": [
+    {"source":"1. Label three microscopy slides and set up the humidified chamber.","label":"Set up slides and chamber","kind":"hands_on"},
+    {"source":"2. Add blocking buffer to each slide.","label":"Add blocking buffer","kind":"hands_on"},
+    {"source":"3. Incubate for 20 minutes at room temperature.","label":"Wait through blocking incubation","kind":"hands_off"},
+    {"source":"4. Aspirate buffer and apply prepared primary antibody dilution.","label":"Apply prepared primary antibody","kind":"hands_on"},
+    {"source":"5. Incubate for 60 minutes in the humidified chamber.","label":"Wait through primary incubation","kind":"hands_off"},
+    {"source":"6. Wash slides 3 times for 5 minutes each.","label":"Perform repeated washes","kind":"hands_on"},
+    {"source":"7. Add prepared secondary antibody dilution, protected from light.","label":"Apply secondary antibody","kind":"hands_on"},
+    {"source":"8. Incubate for 30 minutes, protected from light.","label":"Wait through secondary incubation","kind":"hands_off"},
+    {"source":"9. Rinse slides and mount with prepared mounting medium.","label":"Rinse and mount slides","kind":"hands_on"},
+    {"source":"10. Allow mounting medium to cure overnight before imaging.","label":"Cure before imaging","kind":"hands_off"}
+  ]
+}
