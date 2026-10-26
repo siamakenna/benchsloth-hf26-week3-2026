@@ -1,0 +1,17 @@
+/* Pure organizer state. It cannot modify a protocol, plan, or timer. */
+(function(root,factory){const api=factory();if(typeof module==='object')module.exports=api;else root.DeskCore=api})(typeof window==='object'?window:this,function(){
+'use strict';
+const stages=['inspect','review','recorded'];
+function create(sourceHash,rows){return {sourceHash,rows:Object.freeze(rows.map(r=>Object.freeze({id:r.id,source:r.source}))),pins:[],reviews:{},history:[],undo:[]}}
+function source(s,id){const r=s.rows.find(r=>r.id===id);if(!r)throw Error('Unknown original source ID');return r}
+function event(s,kind,details){s.history.push({sequence:s.history.length+1,kind,at:new Date().toISOString(),details:structuredClone(details)})}
+function pin(s,id){source(s,id);if(s.pins.some(p=>p.id===id))return false;if(s.pins.length>=3)throw Error('Keep up to three evidence cards. Dismiss one first.');const p={id,x:(s.pins.length%3)*32+1,y:Math.floor(s.pins.length/3)*190+12,compare:false};s.pins.push(p);s.undo.push({kind:'dismiss',id});event(s,'pin',{id});return true}
+function dismiss(s,id){const index=s.pins.findIndex(p=>p.id===id);if(index<0)return;const p=s.pins.splice(index,1)[0];s.undo.push({kind:'restore',pin:p,index});event(s,'dismiss',{id})}
+function move(s,id,x,y){const p=s.pins.find(p=>p.id===id);if(!p)return;const before={x:p.x,y:p.y};p.x=Math.min(66,Math.max(0,x));p.y=Math.min(600,Math.max(0,y));s.undo.push({kind:'move',id,...before});event(s,'move_pin',{id,x:p.x,y:p.y})}
+function reorder(s,id,delta){const index=s.pins.findIndex(p=>p.id===id);if(index<0)return;const next=Math.min(s.pins.length-1,Math.max(0,index+delta));const [p]=s.pins.splice(index,1);s.pins.splice(next,0,p);s.undo.push({kind:'reorder',id,index});event(s,'reorder_pin',{id,from:index,to:next})}
+function compare(s,id,value){const p=s.pins.find(p=>p.id===id);if(!p)throw Error('Pin this source first');if(value&&s.pins.filter(p=>p.compare).length>=2&&!p.compare)throw Error('Compare two cards at a time.');s.undo.push({kind:'compare',id,before:p.compare});p.compare=value;event(s,'compare',{id,value})}
+function review(s,id,to,outcome,confirmed){source(s,id);if(!stages.includes(to))throw Error('Unknown review stage');if(!confirmed)throw Error('Explicit user confirmation required');if(to==='recorded'&&!['keep_open','reject_proposal','reviewed_no_change'].includes(outcome))throw Error('Choose an explicit review outcome');const before=s.reviews[id]||{stage:'inspect',outcome:null};s.undo.push({kind:'review',id,before:structuredClone(before)});s.reviews[id]={stage:to,outcome:to==='recorded'?outcome:null};event(s,'review_stage',{id,from:before.stage,to,outcome:s.reviews[id].outcome,sourceChanged:false,timerAuthorityChanged:false})}
+function undo(s){const a=s.undo.pop();if(!a)return false;if(a.kind==='dismiss')s.pins=s.pins.filter(p=>p.id!==a.id);if(a.kind==='restore')s.pins.splice(a.index,0,a.pin);if(a.kind==='move'){const p=s.pins.find(p=>p.id===a.id);if(p)Object.assign(p,{x:a.x,y:a.y})}if(a.kind==='reorder'){const index=s.pins.findIndex(p=>p.id===a.id);if(index>=0){const [p]=s.pins.splice(index,1);s.pins.splice(a.index,0,p)}}if(a.kind==='compare'){const p=s.pins.find(p=>p.id===a.id);if(p)p.compare=a.before}if(a.kind==='review')s.reviews[a.id]=a.before;event(s,'undo',a);return true}
+function hasDurationText(text){return /\b\d+(?:\.\d+)?(?:\s*[-–]\s*\d+(?:\.\d+)?)?\s*(?:seconds?|secs?|minutes?|mins?|hours?|hrs?|days?)\b|\bovernight\b/i.test(text)}
+return {hasDurationText,create,source,pin,dismiss,move,reorder,compare,review,undo,stages};
+});

@@ -1,9 +1,0 @@
-{
-  "files": {
-    "semantic_v6.py": "f65c80f96f376881c4b8e02cfd048118d70545720be642c34c7fd5118c56d58c",
-    "scripts/v6/evaluate.py": "c0425953d163789976c0ef5716e293c0257b62152a33038d027b5375362019d6",
-    "scripts/v6/summarize.py": "b8b69244fd3921d5524e0ecfb8b9e5c3104817172eb76f6e22c709b6c75ee0d6"
-  },
-  "selection": "Three development-only designs; broad schema and first option format preserved. Selected copied-text candidates with section metadata; deterministic direct-question retrieval and Gemma relationship selection. No final inference inspected before this freeze.",
-  "model": "gemma3:4b Q4_K_M; local CPU; temperature0 seed42 ctx4096 predict24 timeout90s; no retries"
-}

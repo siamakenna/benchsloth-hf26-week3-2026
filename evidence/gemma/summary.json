@@ -1,0 +1,20 @@
+{
+  "planned": 28,
+  "attempted": 27,
+  "returned": 26,
+  "typed_schema_valid": 26,
+  "validated_responses": 4,
+  "identity_valid": 25,
+  "abstention_correct": 26,
+  "stale_rejected": 26,
+  "exact_canonical_claims": 25,
+  "unverified_paraphrases": 0,
+  "rejected_claims": 1,
+  "critical_canonical_omissions_on_validated_responses": 0,
+  "mean_seconds": 57.98101356242058,
+  "human_readability": null,
+  "human_usefulness": null,
+  "promoted": false,
+  "baseline": "Preserved complete28-case deterministic baseline; no claims dropped to make Gemma look better.",
+  "notes": "Schema/identity validity is not factual entailment. Missing exact canonical facts include unverified paraphrases, so are not all established factual omissions. Invalid responses count separately. No retries/tuning. The single browser smoke inference is recorded separately, not added to frozen denominators."
+}

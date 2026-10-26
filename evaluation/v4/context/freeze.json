@@ -1,5 +1,0 @@
-{
-  "created_utc": "2026-10-24T06:09:52.826786+00:00",
-  "sha256": "33ffb33fedf22aa77931011f5b78c23282fc3e3345869539686cc5436c3e61ae",
-  "annotation": "Assistant-authored prospective long-input cases before contextual model implementation; no independent human labels. Only four templates with varied times, not sixteen independent linguistic families. Original v4 set remains historical."
-}

@@ -1,9 +1,0 @@
-{
-  "created_utc": "2026-10-24T00:45:45.577129+00:00",
-  "model": "gemma3:4b",
-  "selection": "Selected on development only: 4B had 1 incorrect semantic label of 7; 1B had 3. Rules had zero. No holdout model calls before freeze.",
-  "files": {
-    "app.py": "49f374b6aa26c57a742bb7ff4506184b91d72fc278c5dda0b3e4be9fbeabedfd",
-    "evaluation/run.py": "73ed7d62c41cd89e0b107bf2709dda4c83a46553d846fab03d794fee4c187e1f"
-  }
-}

@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-26T01:01:19.859154+00:00",
+  "role": "Existing frozen Context Recovery only",
+  "cases": 28,
+  "order": "8 development then20 final; original frozen order",
+  "budget_seconds": 1800,
+  "max_attempts_per_case": 1,
+  "tuning": false,
+  "engine_freeze_sha256": "ecaf36661036c963664bbe203cb6f3b2bb6867e8e736bf8c7cde0b6b121d5dcb",
+  "metrics": "Typed schema; exact version/state/source bindings; canonical coverage; unverified paraphrases; known prohibited assertions; critical exact-fact omissions; abstention; injected stale response rejection; actual elapsed request time. Factual entailment and readability not inferred from citation identity. Human utility remains unscored.",
+  "on_response_error": "Preserve complete raw response; distinguish schema/state failure from transport. Continue other cases within budget.",
+  "on_transport_failure": "Stop if no response; do not classify as a model answer."
+}

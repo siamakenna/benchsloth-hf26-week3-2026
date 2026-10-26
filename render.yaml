@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: benchsloth-v09-demo
+    runtime: static
+    buildCommand: python3 scripts/build_render.py
+    staticPublishPath: render_public
+    autoDeployTrigger: off
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
