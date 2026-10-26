@@ -17,12 +17,12 @@
       "sha256": "bc06999250b45699c306141fdc20bede3aff7f15d809b9944bd7e331711fb89f"
     },
     "README.md": {
-      "bytes": 4565,
-      "sha256": "d905a1de4e80a80d9d514e5482cdf34c71150cfb4e12b6f9b9666359187760a6"
+      "bytes": 4625,
+      "sha256": "60f7211688c745dc447a0b91f160a6f81a66557538935013c5b37202d609b37b"
     },
     "web/index.html": {
-      "bytes": 472122,
-      "sha256": "7fcc3477429183a53d4465e72b00af615d2c6ce26dab69b846e68ea12761b886"
+      "bytes": 472183,
+      "sha256": "cbfd912bc37b6c90b8687bbb1e4ec838c8d23733b4447962bee2d34c6475d3de"
     },
     "docs/RELEASE_STEPS.md": {
       "bytes": 2383,
@@ -38,7 +38,7 @@
     },
     "scripts/WEB_EXPECTED.json": {
       "bytes": 757,
-      "sha256": "979622101a6429632fbad15973401ed589afdb4335c8d8fd1679a723304bccde"
+      "sha256": "352fb36fca640ed30dd964da4d0a83f458d5e36a0adf451b28eee2d3e27521ef"
     },
     "source/semantic_v8.py": {
       "bytes": 14063,
@@ -279,6 +279,10 @@
     "web/media/fresh-390.jpg": {
       "bytes": 45108,
       "sha256": "f20e065bb6d0db81c5eb565955d308554f2a19b36ee1ef7003471a08d5b4b7b5"
+    },
+    "docs/PUBLIC_RELEASE_FIXES.md": {
+      "bytes": 1082,
+      "sha256": "774a7b50d243f8957eca9fcbafc2a9a4cdb367ef119be840cf149f85fddfa50d"
     }
   }
 }

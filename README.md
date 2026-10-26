@@ -1,10 +1,12 @@
-# BenchSloth v0.9 — Pick up where you left off
+# BenchSloth v0.9.1 — Pick up where you left off
 
 Instructions change. Your notes and previous decisions shouldn't disappear when they do.
 
 BenchSloth is a small, local-first research desk for finding a source passage, keeping a manually started countdown alongside its restrictions, comparing old and new instructions, and figuring out what needs another look. **It does not run experiments, know physical progress, or authorize unattended work.**
 
 ## Try the interactive demo
+
+**[Open BenchSloth on Render](https://benchsloth-hf26-week3-2026.onrender.com)**
 
 The Render site publishes only the self-contained browser demo, synthetic media, a concise evidence page, and a source/evidence download. Try the sample instructions, pin a passage, compare versions, mark a prior decision as needing review, and use **Pick up where I left off**. The standalone browser demo works without a model and prevents network model calls.
 
@@ -41,7 +43,7 @@ The published static build is deterministic and self-contained. A source quote o
 - `evidence/gemma/`: bounded model comparison artifacts (no private laboratory originals)
 - `scripts/build_render.py`: strict SHA-256-checked static-site build
 - `docs/SCIENTIFIC_REVIEW_AND_IMAGE_NOTES.md`: NIH-informed review worksheet; no human labels are claimed.
-- The DEV article is intentionally not in this public package and stays unpublished.
+- The DEV article is maintained separately on DEV Community.
 
 Project code and original design are released under MIT; Gemma model weights follow their own license. No private lab SOPs, unpublished notebooks, or owner-review packages are included. This public release was prepared from the user-supplied v0.9 archive with local checkpoint reported as `7df5a53`.
 
