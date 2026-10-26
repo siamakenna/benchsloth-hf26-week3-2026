@@ -102,11 +102,11 @@
 <style>
 .bs-photos{margin:36px auto 55px;border:1px solid #b5c7ba;border-radius:14px;background:#f4f5ed;padding:clamp(17px,3vw,30px);max-width:1100px;color:#17352e}
 .bs-photos h2{font:clamp(27px,3vw,36px)/1.15 Georgia,serif;margin:8px 0}.bs-photos p{font:14px/1.65 system-ui,sans-serif;max-width:830px}
-.bs-photo-controls{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}.bs-photo-controls label{display:flex;flex-direction:column;gap:8px;font:600 13px/1.4 system-ui,sans-serif}
-.bs-photo-controls input,.bs-photo-controls textarea{background:#fffdf7;color:#17352e;border:1px solid #a0b5a5;border-radius:7px;padding:10px;max-width:100%;font:14px system-ui,sans-serif}
+.bs-photo-controls{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}.bs-photo-controls label{min-width:0;display:flex;flex-direction:column;gap:8px;font:600 13px/1.4 system-ui,sans-serif}
+.bs-photo-controls input,.bs-photo-controls textarea{box-sizing:border-box;min-width:0;width:100%;background:#fffdf7;color:#17352e;border:1px solid #a0b5a5;border-radius:7px;padding:10px;max-width:100%;font:14px system-ui,sans-serif}
 .bs-photo-actions{grid-column:1 / -1;display:flex;gap:8px;flex-wrap:wrap}.bs-photo-actions button,.bs-photo-remove{border:1px solid #8ba394;border-radius:7px;background:#fffdf7;color:#17352e;padding:10px 15px;min-height:44px;cursor:pointer;font:600 13px system-ui,sans-serif}
 .bs-photo-actions button:hover,.bs-photo-remove:hover{background:#e2ebe0}.bs-photo-small{font:12px/1.6 system-ui,sans-serif!important;color:#4b6257}
-.bs-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px;margin-top:15px}.bs-photo-card{background:#fffdf7;border:1px solid #bbcbbf;border-radius:10px;padding:13px;min-width:0}
+.bs-photo-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:15px;margin-top:15px}.bs-photo-card{background:#fffdf7;border:1px solid #bbcbbf;border-radius:10px;padding:13px;min-width:0}
 .bs-photo-card img{display:block;width:100%;max-height:220px;object-fit:contain;border-radius:6px;background:#e8ebe4}.bs-photo-card p{font-size:12px!important;margin:8px 0;overflow-wrap:anywhere}
 .bs-photo-card .bs-photo-warning{border-left:3px solid #9b622c;padding-left:8px;color:#744d18}
 .bs-photos button:focus-visible,.bs-photos input:focus-visible,.bs-photos textarea:focus-visible{outline:3px solid #ae6936;outline-offset:3px}

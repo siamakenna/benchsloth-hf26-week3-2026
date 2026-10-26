@@ -9,3 +9,5 @@ The reviewed HTML originally had SHA-256 `7fcc3477429183a53d4465e72b00af615d2c6c
 The static allowlist and public manifest have been updated for these exact changes. No frozen model evaluation, source passage, timer authority, or model role changed. The 72-second video demonstrates v0.9 before photo notes; the deployed v0.9.1 adds manual private visual notes.
 
 Small revision-state identity/epoch ideas and earlier MIT code were reused from the author's FundPilot project. No private data or scientific conclusions were imported. Original code/artwork use this repository's MIT license. Gemma weights have separate Google terms.
+
+A live 320px check reproduced overflow from the native file input in photo notes. The release correction constrains photo controls to their grid width and lets photo cards fit narrow screens. No scientific behavior changed.
